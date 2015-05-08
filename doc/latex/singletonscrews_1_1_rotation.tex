@@ -1,0 +1,360 @@
+\hypertarget{singletonscrews_1_1_rotation}{\section{screws\+:\+:Rotation$<$ Num\+Type $>$ Class Template Reference}
+\label{singletonscrews_1_1_rotation}\index{screws\+::\+Rotation$<$ Num\+Type $>$@{screws\+::\+Rotation$<$ Num\+Type $>$}}
+}
+
+
+Implements a 3x3 rotation along with basic operators.  
+
+
+
+
+{\ttfamily \#include $<$rotation.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{singletonscrews_1_1_rotation_a6e84b8c6ff433fb45a4549df8e8e38c6}{\hyperlink{singletonscrews_1_1_rotation_a6e84b8c6ff433fb45a4549df8e8e38c6}{Rotation} ()}\label{singletonscrews_1_1_rotation_a6e84b8c6ff433fb45a4549df8e8e38c6}
+
+\begin{DoxyCompactList}\small\item\em Construct a 3x3 identity rotation matrix. \end{DoxyCompactList}\item 
+\hyperlink{singletonscrews_1_1_rotation_a39ea7087dcc2a48f2b937e97ce42ff00}{Rotation} (const \hyperlink{singletonscrews_1_1_translation}{Translation}$<$ Num\+Type $>$ \&c0, const \hyperlink{singletonscrews_1_1_translation}{Translation}$<$ Num\+Type $>$ \&c1, const \hyperlink{singletonscrews_1_1_translation}{Translation}$<$ Num\+Type $>$ \&c2)
+\begin{DoxyCompactList}\small\item\em Construct the 3x3 matrix from vectors. \end{DoxyCompactList}\item 
+\hyperlink{singletonscrews_1_1_rotation_a907da04fc1292357510ed18e9b25c05b}{Rotation} (const char \&\hyperlink{singletonscrews_1_1_rotation_a7ce8dc80a0e21118bc1c4361677f4a9f}{axis}, const Num\+Type \&theta)
+\begin{DoxyCompactList}\small\item\em Construct a 3x3 rotation given common axes. \end{DoxyCompactList}\item 
+\hyperlink{singletonscrews_1_1_rotation_a34694b15ae0316ce17fe445802a3b3a1}{Rotation} (const \hyperlink{singletonscrews_1_1_translation}{Vector3}$<$ Num\+Type $>$ \&axis\+Vector, const Num\+Type \&theta)
+\begin{DoxyCompactList}\small\item\em Construct a 3x3 rotation given axis and angle. \end{DoxyCompactList}\item 
+\hyperlink{singletonscrews_1_1_rotation_afc1c77ce3202b734e28727098177384d}{Rotation} (const \hyperlink{singletonscrews_1_1_translation}{Vector3}$<$ Num\+Type $>$ \&z\+Axis)
+\begin{DoxyCompactList}\small\item\em Create a rotation instance given a \hyperlink{singletonscrews_1_1_translation}{Translation} that acts as the z axis. \end{DoxyCompactList}\item 
+\hypertarget{singletonscrews_1_1_rotation_a6643143ff18766e37cc03290a3b6c22a}{\hyperlink{singletonscrews_1_1_rotation_a6643143ff18766e37cc03290a3b6c22a}{$\sim$\+Rotation} ()}\label{singletonscrews_1_1_rotation_a6643143ff18766e37cc03290a3b6c22a}
+
+\begin{DoxyCompactList}\small\item\em Default destructor. \end{DoxyCompactList}\item 
+\hyperlink{singletonscrews_1_1_translation}{Vector3}$<$ Num\+Type $>$ \hyperlink{singletonscrews_1_1_rotation_a7ce8dc80a0e21118bc1c4361677f4a9f}{axis} () const 
+\begin{DoxyCompactList}\small\item\em Return the axis of rotation. \end{DoxyCompactList}\item 
+Num\+Type \hyperlink{singletonscrews_1_1_rotation_ab13ac401aaf6ff74c9b746e244e88c88}{angle} () const 
+\begin{DoxyCompactList}\small\item\em Return the magnitude of the rotation. It calculates the axis internally. \end{DoxyCompactList}\item 
+\hyperlink{singletonscrews_1_1_translation}{Vector3}$<$ Num\+Type $>$ \hyperlink{singletonscrews_1_1_rotation_acd934657ce41abab74f4bbafb9781ae5}{rpy} () const 
+\begin{DoxyCompactList}\small\item\em Return the roll-\/pitch-\/yaw angles. \end{DoxyCompactList}\item 
+\hyperlink{singletonscrews_1_1_rotation}{Rotation}$<$ Num\+Type $>$ \hyperlink{singletonscrews_1_1_rotation_a7cce1a20c1d9f203f5f4f09258866ffc}{inv} () const 
+\begin{DoxyCompactList}\small\item\em Invert by taking the transpose. \end{DoxyCompactList}\item 
+\hyperlink{singletonscrews_1_1_skew}{Skew}$<$ Num\+Type $>$ \hyperlink{singletonscrews_1_1_rotation_a9bc77fe2db47210ebe86d2ca069204f8}{log} () const 
+\begin{DoxyCompactList}\small\item\em Return the skew (log) symmetric matrix corresponding to this rotation. \end{DoxyCompactList}\item 
+\hyperlink{singletonscrews_1_1_skew}{Skew}$<$ Num\+Type $>$ \hyperlink{singletonscrews_1_1_rotation_a2e7ada3b71cbcae404560a17e758aa87}{skew} () const 
+\begin{DoxyCompactList}\small\item\em Return the skew (log) symmetric matrix corresponding to this rotation. \end{DoxyCompactList}\item 
+const Num\+Type \& \hyperlink{singletonscrews_1_1_rotation_abc04a3b626fd693c26e9c3ec51c5ddf2}{operator()} (const unsigned int \&i, const unsigned int \&j) const 
+\begin{DoxyCompactList}\small\item\em Return the requested element (read). \end{DoxyCompactList}\item 
+\hypertarget{singletonscrews_1_1_rotation_a070845699aaa7d1624520c105dc8286c}{\hyperlink{singletonscrews_1_1_rotation}{Rotation}$<$ Num\+Type $>$ \hyperlink{singletonscrews_1_1_rotation_a070845699aaa7d1624520c105dc8286c}{operator$\ast$} (const \hyperlink{singletonscrews_1_1_rotation}{Rotation}$<$ Num\+Type $>$ \&R) const }\label{singletonscrews_1_1_rotation_a070845699aaa7d1624520c105dc8286c}
+
+\begin{DoxyCompactList}\small\item\em Multiplication operator. \end{DoxyCompactList}\item 
+\hypertarget{singletonscrews_1_1_rotation_aa280d6c2c8a5e5a8ddce5fd77a921513}{const \hyperlink{singletonscrews_1_1_rotation}{Rotation}$<$ Num\+Type $>$ \& \hyperlink{singletonscrews_1_1_rotation_aa280d6c2c8a5e5a8ddce5fd77a921513}{operator$\ast$=} (const \hyperlink{singletonscrews_1_1_rotation}{Rotation}$<$ Num\+Type $>$ \&R)}\label{singletonscrews_1_1_rotation_aa280d6c2c8a5e5a8ddce5fd77a921513}
+
+\begin{DoxyCompactList}\small\item\em In-\/place multiplication operator. \end{DoxyCompactList}\item 
+bool \hyperlink{singletonscrews_1_1_rotation_a1785277bfd2d6cb12d460ec56c39766b}{operator==} (const \hyperlink{singletonscrews_1_1_rotation}{Rotation}$<$ Num\+Type $>$ \&R) const 
+\begin{DoxyCompactList}\small\item\em Equality operator. \end{DoxyCompactList}\item 
+bool \hyperlink{singletonscrews_1_1_rotation_a456c2a098b8e750ad26f8a6f3580693a}{operator!=} (const \hyperlink{singletonscrews_1_1_rotation}{Rotation}$<$ Num\+Type $>$ \&R) const 
+\begin{DoxyCompactList}\small\item\em Inequality operator. \end{DoxyCompactList}\item 
+bool \hyperlink{singletonscrews_1_1_rotation_a71be5e82832ee4fcd3dd15dbb76c2d88}{approx\+Eq} (const \hyperlink{singletonscrews_1_1_rotation}{Rotation}$<$ Num\+Type $>$ \&R, double eps=F\+L\+T\+\_\+\+E\+P\+S\+I\+L\+O\+N) const 
+\begin{DoxyCompactList}\small\item\em Approximal equality operator, within a given epsilon or system precision. \end{DoxyCompactList}\item 
+\hypertarget{singletonscrews_1_1_rotation_ab6d1e4186d122c72c40487f14a4ad855}{\hyperlink{singletonscrews_1_1_translation}{Vector3}$<$ Num\+Type $>$ \hyperlink{singletonscrews_1_1_rotation_ab6d1e4186d122c72c40487f14a4ad855}{operator$\ast$} (const \hyperlink{singletonscrews_1_1_translation}{Vector3}$<$ Num\+Type $>$ \&T) const }\label{singletonscrews_1_1_rotation_ab6d1e4186d122c72c40487f14a4ad855}
+
+\begin{DoxyCompactList}\small\item\em Multiplication with a 3x1 Vector acting as a point. \end{DoxyCompactList}\item 
+\hypertarget{singletonscrews_1_1_rotation_a2e20f50810052017fe422e207f626df9}{bool \hyperlink{singletonscrews_1_1_rotation_a2e20f50810052017fe422e207f626df9}{is\+Valid} () const }\label{singletonscrews_1_1_rotation_a2e20f50810052017fe422e207f626df9}
+
+\begin{DoxyCompactList}\small\item\em Perform verification that matrix is indeed in approriate format, by checking if the determinant is zero, and if the columns are othogonal to each other and of magnitude one. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{singletonscrews_1_1_rotation_a0b423fbb7939045af1d634ef21ad5ff0}{void {\bfseries construct} (const Num\+Type \&ux, const Num\+Type \&uy, const Num\+Type \&uz, const Num\+Type \&theta)}\label{singletonscrews_1_1_rotation_a0b423fbb7939045af1d634ef21ad5ff0}
+
+\item 
+\hypertarget{singletonscrews_1_1_rotation_aec3c58fbaa5d07e8369250d34d7e615f}{void {\bfseries set\+Data} (const Num\+Type \&r00, const Num\+Type \&r01, const Num\+Type \&r02, const Num\+Type \&r10, const Num\+Type \&r11, const Num\+Type \&r12, const Num\+Type \&r20, const Num\+Type \&r21, const Num\+Type \&r22)}\label{singletonscrews_1_1_rotation_aec3c58fbaa5d07e8369250d34d7e615f}
+
+\item 
+\hypertarget{singletonscrews_1_1_rotation_a3c940107d1d8a6f1ed2503b651584a07}{void {\bfseries reset\+Data} ()}\label{singletonscrews_1_1_rotation_a3c940107d1d8a6f1ed2503b651584a07}
+
+\item 
+\hypertarget{singletonscrews_1_1_rotation_a77ac71da2f8612ab261535c500336ba4}{void {\bfseries calculate\+Axis\+And\+Angle} (\hyperlink{singletonscrews_1_1_translation}{Vector3}$<$ Num\+Type $>$ \&axis\+Vec, Num\+Type \&angle\+Val) const }\label{singletonscrews_1_1_rotation_a77ac71da2f8612ab261535c500336ba4}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{singletonscrews_1_1_rotation_af6a71a520e4124440a02f67d343a57fb}{Eigen\+::\+Matrix$<$ Num\+Type, 3, 3 $>$ {\bfseries \+\_\+data}}\label{singletonscrews_1_1_rotation_af6a71a520e4124440a02f67d343a57fb}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{singletonscrews_1_1_rotation_a01e1886aafbf1483da899aba3b6c58da}{{\footnotesize template$<$class Num\+Type\+Trans $>$ }\\class {\bfseries Translation}}\label{singletonscrews_1_1_rotation_a01e1886aafbf1483da899aba3b6c58da}
+
+\item 
+\hypertarget{singletonscrews_1_1_rotation_a5df6228d19a297c970567807320a1400}{{\footnotesize template$<$class Num\+Type\+Skew $>$ }\\class {\bfseries Skew}}\label{singletonscrews_1_1_rotation_a5df6228d19a297c970567807320a1400}
+
+\item 
+\hypertarget{singletonscrews_1_1_rotation_a90f9fa90695f35a9b08d0e888ea4297e}{{\footnotesize template$<$class Num\+Type\+Twist $>$ }\\class {\bfseries Twist}}\label{singletonscrews_1_1_rotation_a90f9fa90695f35a9b08d0e888ea4297e}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Num\+Type$>$class screws\+::\+Rotation$<$ Num\+Type $>$}
+
+Implements a 3x3 rotation along with basic operators. 
+
+\begin{DoxyNote}{Note}
+Author\+: Christos Bergeles 
+\end{DoxyNote}
+\begin{DoxyDate}{Date}
+27th April 2015 
+\end{DoxyDate}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{singletonscrews_1_1_rotation_a39ea7087dcc2a48f2b937e97ce42ff00}{\index{screws\+::\+Rotation@{screws\+::\+Rotation}!Rotation@{Rotation}}
+\index{Rotation@{Rotation}!screws\+::\+Rotation@{screws\+::\+Rotation}}
+\subsubsection[{Rotation}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Num\+Type$>$ {\bf screws\+::\+Rotation}$<$ Num\+Type $>$\+::{\bf Rotation} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Translation}$<$ Num\+Type $>$ \&}]{c0, }
+\item[{const {\bf Translation}$<$ Num\+Type $>$ \&}]{c1, }
+\item[{const {\bf Translation}$<$ Num\+Type $>$ \&}]{c2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{singletonscrews_1_1_rotation_a39ea7087dcc2a48f2b937e97ce42ff00}
+
+
+Construct the 3x3 matrix from vectors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c0} & the vector that will become the first column of the rotation matrix. \\
+\hline
+{\em c1} & the vector that will become the second column of the rotation matrix. \\
+\hline
+{\em c2} & the vector that will become the third column of the rotation matrix. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+The constructor checks if the resulting matrix has orthonormal columns. 
+\end{DoxyNote}
+\hypertarget{singletonscrews_1_1_rotation_a907da04fc1292357510ed18e9b25c05b}{\index{screws\+::\+Rotation@{screws\+::\+Rotation}!Rotation@{Rotation}}
+\index{Rotation@{Rotation}!screws\+::\+Rotation@{screws\+::\+Rotation}}
+\subsubsection[{Rotation}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Num\+Type$>$ {\bf screws\+::\+Rotation}$<$ Num\+Type $>$\+::{\bf Rotation} (
+\begin{DoxyParamCaption}
+\item[{const char \&}]{axis, }
+\item[{const Num\+Type \&}]{theta}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{singletonscrews_1_1_rotation_a907da04fc1292357510ed18e9b25c05b}
+
+
+Construct a 3x3 rotation given common axes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em axis} & \char`\"{}x\char`\"{}, \char`\"{}y\char`\"{}, or \char`\"{}z\char`\"{} for common rotations. \\
+\hline
+{\em theta} & the rotation angle. \\
+\hline
+\end{DoxyParams}
+\hypertarget{singletonscrews_1_1_rotation_a34694b15ae0316ce17fe445802a3b3a1}{\index{screws\+::\+Rotation@{screws\+::\+Rotation}!Rotation@{Rotation}}
+\index{Rotation@{Rotation}!screws\+::\+Rotation@{screws\+::\+Rotation}}
+\subsubsection[{Rotation}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Num\+Type$>$ {\bf screws\+::\+Rotation}$<$ Num\+Type $>$\+::{\bf Rotation} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3}$<$ Num\+Type $>$ \&}]{axis\+Vector, }
+\item[{const Num\+Type \&}]{theta}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{singletonscrews_1_1_rotation_a34694b15ae0316ce17fe445802a3b3a1}
+
+
+Construct a 3x3 rotation given axis and angle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em axis\+Vector} & the axis of the rotation. \\
+\hline
+{\em theta} & the rotation angle. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+If axis\+Vector is not normal, it is normalised. 
+\end{DoxyNote}
+\hypertarget{singletonscrews_1_1_rotation_afc1c77ce3202b734e28727098177384d}{\index{screws\+::\+Rotation@{screws\+::\+Rotation}!Rotation@{Rotation}}
+\index{Rotation@{Rotation}!screws\+::\+Rotation@{screws\+::\+Rotation}}
+\subsubsection[{Rotation}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Num\+Type$>$ {\bf screws\+::\+Rotation}$<$ Num\+Type $>$\+::{\bf Rotation} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3}$<$ Num\+Type $>$ \&}]{z\+Axis}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{singletonscrews_1_1_rotation_afc1c77ce3202b734e28727098177384d}
+
+
+Create a rotation instance given a \hyperlink{singletonscrews_1_1_translation}{Translation} that acts as the z axis. 
+
+\begin{DoxyNote}{Note}
+x and y are arbitrarily defined to generate a right-\/handed system. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em v} & the 3x1 orientation vector. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{singletonscrews_1_1_rotation_ab13ac401aaf6ff74c9b746e244e88c88}{\index{screws\+::\+Rotation@{screws\+::\+Rotation}!angle@{angle}}
+\index{angle@{angle}!screws\+::\+Rotation@{screws\+::\+Rotation}}
+\subsubsection[{angle}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Num\+Type$>$ Num\+Type {\bf screws\+::\+Rotation}$<$ Num\+Type $>$\+::angle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{singletonscrews_1_1_rotation_ab13ac401aaf6ff74c9b746e244e88c88}
+
+
+Return the magnitude of the rotation. It calculates the axis internally. 
+
+\begin{DoxyReturn}{Returns}
+the magnitude of rotation around the axis. 
+\end{DoxyReturn}
+\hypertarget{singletonscrews_1_1_rotation_a71be5e82832ee4fcd3dd15dbb76c2d88}{\index{screws\+::\+Rotation@{screws\+::\+Rotation}!approx\+Eq@{approx\+Eq}}
+\index{approx\+Eq@{approx\+Eq}!screws\+::\+Rotation@{screws\+::\+Rotation}}
+\subsubsection[{approx\+Eq}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Num\+Type$>$ bool {\bf screws\+::\+Rotation}$<$ Num\+Type $>$\+::approx\+Eq (
+\begin{DoxyParamCaption}
+\item[{const {\bf Rotation}$<$ Num\+Type $>$ \&}]{R, }
+\item[{double}]{eps = {\ttfamily FLT\+\_\+EPSILON}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{singletonscrews_1_1_rotation_a71be5e82832ee4fcd3dd15dbb76c2d88}
+
+
+Approximal equality operator, within a given epsilon or system precision. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em R} & compared rotation. \\
+\hline
+{\em eps} & desired precision \mbox{[}default\+: machine precision\mbox{]}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{singletonscrews_1_1_rotation_a7ce8dc80a0e21118bc1c4361677f4a9f}{\index{screws\+::\+Rotation@{screws\+::\+Rotation}!axis@{axis}}
+\index{axis@{axis}!screws\+::\+Rotation@{screws\+::\+Rotation}}
+\subsubsection[{axis}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Num\+Type$>$ {\bf Vector3}$<$Num\+Type$>$ {\bf screws\+::\+Rotation}$<$ Num\+Type $>$\+::axis (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{singletonscrews_1_1_rotation_a7ce8dc80a0e21118bc1c4361677f4a9f}
+
+
+Return the axis of rotation. 
+
+\begin{DoxyReturn}{Returns}
+the axis of rotation as a 3x1 vector. 
+\end{DoxyReturn}
+\hypertarget{singletonscrews_1_1_rotation_a7cce1a20c1d9f203f5f4f09258866ffc}{\index{screws\+::\+Rotation@{screws\+::\+Rotation}!inv@{inv}}
+\index{inv@{inv}!screws\+::\+Rotation@{screws\+::\+Rotation}}
+\subsubsection[{inv}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Num\+Type$>$ {\bf Rotation}$<$Num\+Type$>$ {\bf screws\+::\+Rotation}$<$ Num\+Type $>$\+::inv (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{singletonscrews_1_1_rotation_a7cce1a20c1d9f203f5f4f09258866ffc}
+
+
+Invert by taking the transpose. 
+
+\begin{DoxyReturn}{Returns}
+the inverted rotation matrix. 
+\end{DoxyReturn}
+\hypertarget{singletonscrews_1_1_rotation_a9bc77fe2db47210ebe86d2ca069204f8}{\index{screws\+::\+Rotation@{screws\+::\+Rotation}!log@{log}}
+\index{log@{log}!screws\+::\+Rotation@{screws\+::\+Rotation}}
+\subsubsection[{log}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Num\+Type$>$ {\bf Skew}$<$Num\+Type$>$ {\bf screws\+::\+Rotation}$<$ Num\+Type $>$\+::log (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{singletonscrews_1_1_rotation_a9bc77fe2db47210ebe86d2ca069204f8}
+
+
+Return the skew (log) symmetric matrix corresponding to this rotation. 
+
+\begin{DoxyReturn}{Returns}
+\+: the skew symmetric matrix. 
+\end{DoxyReturn}
+\hypertarget{singletonscrews_1_1_rotation_a456c2a098b8e750ad26f8a6f3580693a}{\index{screws\+::\+Rotation@{screws\+::\+Rotation}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!screws\+::\+Rotation@{screws\+::\+Rotation}}
+\subsubsection[{operator"!=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Num\+Type$>$ bool {\bf screws\+::\+Rotation}$<$ Num\+Type $>$\+::operator!= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Rotation}$<$ Num\+Type $>$ \&}]{R}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{singletonscrews_1_1_rotation_a456c2a098b8e750ad26f8a6f3580693a}
+
+
+Inequality operator. 
+
+\begin{DoxyReturn}{Returns}
+true if one of the element-\/by-\/element comparisons return true. Otherwise, false. 
+\end{DoxyReturn}
+\hypertarget{singletonscrews_1_1_rotation_abc04a3b626fd693c26e9c3ec51c5ddf2}{\index{screws\+::\+Rotation@{screws\+::\+Rotation}!operator()@{operator()}}
+\index{operator()@{operator()}!screws\+::\+Rotation@{screws\+::\+Rotation}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Num\+Type$>$ const Num\+Type\& {\bf screws\+::\+Rotation}$<$ Num\+Type $>$\+::operator() (
+\begin{DoxyParamCaption}
+\item[{const unsigned int \&}]{i, }
+\item[{const unsigned int \&}]{j}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{singletonscrews_1_1_rotation_abc04a3b626fd693c26e9c3ec51c5ddf2}
+
+
+Return the requested element (read). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & the index of the row. \\
+\hline
+{\em j} & the index of the column. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+No boundary check is performed. 
+\end{DoxyNote}
+\hypertarget{singletonscrews_1_1_rotation_a1785277bfd2d6cb12d460ec56c39766b}{\index{screws\+::\+Rotation@{screws\+::\+Rotation}!operator==@{operator==}}
+\index{operator==@{operator==}!screws\+::\+Rotation@{screws\+::\+Rotation}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Num\+Type$>$ bool {\bf screws\+::\+Rotation}$<$ Num\+Type $>$\+::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf Rotation}$<$ Num\+Type $>$ \&}]{R}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{singletonscrews_1_1_rotation_a1785277bfd2d6cb12d460ec56c39766b}
+
+
+Equality operator. 
+
+\begin{DoxyReturn}{Returns}
+true if all element-\/by-\/element comparisons return true. Otherwise, false. 
+\end{DoxyReturn}
+\hypertarget{singletonscrews_1_1_rotation_acd934657ce41abab74f4bbafb9781ae5}{\index{screws\+::\+Rotation@{screws\+::\+Rotation}!rpy@{rpy}}
+\index{rpy@{rpy}!screws\+::\+Rotation@{screws\+::\+Rotation}}
+\subsubsection[{rpy}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Num\+Type$>$ {\bf Vector3}$<$Num\+Type$>$ {\bf screws\+::\+Rotation}$<$ Num\+Type $>$\+::rpy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{singletonscrews_1_1_rotation_acd934657ce41abab74f4bbafb9781ae5}
+
+
+Return the roll-\/pitch-\/yaw angles. 
+
+\begin{DoxyReturn}{Returns}
+a 3x1 vector of the rpy angles. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Angles are returned in the \mbox{[}0, 2\mbox{]} domain. 
+\end{DoxyNote}
+\hypertarget{singletonscrews_1_1_rotation_a2e7ada3b71cbcae404560a17e758aa87}{\index{screws\+::\+Rotation@{screws\+::\+Rotation}!skew@{skew}}
+\index{skew@{skew}!screws\+::\+Rotation@{screws\+::\+Rotation}}
+\subsubsection[{skew}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Num\+Type$>$ {\bf Skew}$<$Num\+Type$>$ {\bf screws\+::\+Rotation}$<$ Num\+Type $>$\+::skew (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{singletonscrews_1_1_rotation_a2e7ada3b71cbcae404560a17e758aa87}
+
+
+Return the skew (log) symmetric matrix corresponding to this rotation. 
+
+\begin{DoxyReturn}{Returns}
+\+: the skew symmetric matrix. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/cbergeles/\+Dropbox/prj/mevislab/\+Custom\+Libraries/\+General/\+Sources/\+Shared/\+Screws/homogeneous\+Transform.\+hpp\item 
+/\+Users/cbergeles/\+Dropbox/prj/mevislab/\+Custom\+Libraries/\+General/\+Sources/\+Shared/\+Screws/rotation.\+hpp\end{DoxyCompactItemize}

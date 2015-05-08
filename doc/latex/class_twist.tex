@@ -1,0 +1,235 @@
+\hypertarget{class_twist}{\section{Twist Class Reference}
+\label{class_twist}\index{Twist@{Twist}}
+}
+
+
+Implements a 4x4 twist matrix with basic functionality such as exponents, logs etc.  
+
+
+
+
+{\ttfamily \#include $<$twist.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_twist_adc605211a599bca90759dcee634d3cdc}{\hyperlink{class_twist_adc605211a599bca90759dcee634d3cdc}{Twist} ()}\label{class_twist_adc605211a599bca90759dcee634d3cdc}
+
+\begin{DoxyCompactList}\small\item\em Initialise with zeros. This corresponds to the identity homogeneous transformation matrix. \end{DoxyCompactList}\item 
+\hyperlink{class_twist_a42776d552cc3751c1eec0ae1e26f1a58}{Twist} (const \hyperlink{class_homogeneous_transform}{Homogeneous\+Transform} \&H\+T)
+\begin{DoxyCompactList}\small\item\em Create a twist by taking the logarithm of a homogeneous transformation matrix. \end{DoxyCompactList}\item 
+\hyperlink{class_twist_a4d34345c28881dfacd18178fb114c6b2}{Twist} (const arma\+::colvec\+::fixed$<$ 6 $>$ \&v)
+\begin{DoxyCompactList}\small\item\em Create a twist from a 6x1 vector of twist coordinates. \end{DoxyCompactList}\item 
+\hyperlink{class_twist_a65bba405b8213de85a94b6c499d35a64}{Twist} (const double \&t0, const double \&t1, const double \&t2, const double \&t3, const double \&t4, const double \&t5)
+\begin{DoxyCompactList}\small\item\em Create a twist using the 6 twist coordinates. \end{DoxyCompactList}\item 
+\hypertarget{class_twist_a573ae1fbc4965e655e88f015c85905c4}{\hyperlink{class_twist_a573ae1fbc4965e655e88f015c85905c4}{$\sim$\+Twist} ()}\label{class_twist_a573ae1fbc4965e655e88f015c85905c4}
+
+\begin{DoxyCompactList}\small\item\em Default destructor. \end{DoxyCompactList}\item 
+arma\+::colvec\+::fixed$<$ 3 $>$ \hyperlink{class_twist_a6eda20aad94ab2817a24e8900466ca1c}{pitch} () const 
+\begin{DoxyCompactList}\small\item\em Calculate and return the pitch of the twist. \end{DoxyCompactList}\item 
+arma\+::colvec\+::fixed$<$ 6 $>$ \hyperlink{class_twist_aa13c6bffb6aad012280a4de936f911c9}{axis} () const 
+\begin{DoxyCompactList}\small\item\em Calculate and return the axis of the twist. \end{DoxyCompactList}\item 
+arma\+::colvec\+::fixed$<$ 6 $>$ \hyperlink{class_twist_ab5b35a98ac132fb136de5ad7c9029a55}{coordinates} () const 
+\begin{DoxyCompactList}\small\item\em Calculate and return the 6x1 twist coordinates. \end{DoxyCompactList}\item 
+\hypertarget{class_twist_a11c86066c91649ad9469abe74c462cb5}{double \hyperlink{class_twist_a11c86066c91649ad9469abe74c462cb5}{magnitude} () const }\label{class_twist_a11c86066c91649ad9469abe74c462cb5}
+
+\begin{DoxyCompactList}\small\item\em Calculate and return the magnitude of the twist. \end{DoxyCompactList}\item 
+\hyperlink{class_homogeneous_transform}{Homogeneous\+Transform} \hyperlink{class_twist_a7b48ecc2c97d3ab5b162d5b67915abaf}{exp} (const double \&theta=1) const 
+\begin{DoxyCompactList}\small\item\em Create a homogeneous transformation matrix by taking the exponential of the twist. \end{DoxyCompactList}\item 
+\hypertarget{class_twist_a6c8976333142b347744f4a034b6f96bf}{bool \hyperlink{class_twist_a6c8976333142b347744f4a034b6f96bf}{is\+Valid} () const }\label{class_twist_a6c8976333142b347744f4a034b6f96bf}
+
+\begin{DoxyCompactList}\small\item\em Perform verification that matrix is indeed in approriate format by checking the \hyperlink{class_skew}{Skew} component. \end{DoxyCompactList}\item 
+\hypertarget{class_twist_ac1bb79a35b3ae5fcd78cbe805faaf1d4}{\hyperlink{class_skew}{Skew} \hyperlink{class_twist_ac1bb79a35b3ae5fcd78cbe805faaf1d4}{get\+Skew} () const }\label{class_twist_ac1bb79a35b3ae5fcd78cbe805faaf1d4}
+
+\begin{DoxyCompactList}\small\item\em Returns the skew symmetric (rotation) part of the twist. \end{DoxyCompactList}\item 
+\hypertarget{class_twist_aec0ab96d3cc03f1c280cc01fc6cfda3f}{arma\+::colvec\+::fixed$<$ 3 $>$ \hyperlink{class_twist_aec0ab96d3cc03f1c280cc01fc6cfda3f}{get\+Velocity} () const }\label{class_twist_aec0ab96d3cc03f1c280cc01fc6cfda3f}
+
+\begin{DoxyCompactList}\small\item\em Returns the velocity part of the twist. \end{DoxyCompactList}\item 
+\hypertarget{class_twist_a72a0c4cda47dcd5262280cc51149d2c1}{void {\bfseries print} () const }\label{class_twist_a72a0c4cda47dcd5262280cc51149d2c1}
+
+\item 
+\hypertarget{class_twist_a9edb824a00487857996ab2fb9b1437e4}{\hyperlink{class_twist}{Twist} \hyperlink{class_twist_a9edb824a00487857996ab2fb9b1437e4}{operator+} (const \hyperlink{class_twist}{Twist} \&T)}\label{class_twist_a9edb824a00487857996ab2fb9b1437e4}
+
+\begin{DoxyCompactList}\small\item\em Adds two twists. This corresponds to multiplication of the respective homogeneous transformation matrices. \end{DoxyCompactList}\item 
+\hypertarget{class_twist_a6ee2191b6fdff2922045707a88aa036f}{bool {\bfseries operator==} (const \hyperlink{class_twist}{Twist} \&T)}\label{class_twist_a6ee2191b6fdff2922045707a88aa036f}
+
+\item 
+double \hyperlink{class_twist_adb6e00664c4656a9131389005fcfad50}{at} (const int \&i, const int \&j) const 
+\begin{DoxyCompactList}\small\item\em Accessor function for ease of use. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_twist_aa9d2bf0f1d1d2655fb37b513d3159be3}{class {\bfseries Rotation}}\label{class_twist_aa9d2bf0f1d1d2655fb37b513d3159be3}
+
+\item 
+\hypertarget{class_twist_a750420852e1c43779a3e6de1b3a9f158}{class {\bfseries Translation}}\label{class_twist_a750420852e1c43779a3e6de1b3a9f158}
+
+\item 
+\hypertarget{class_twist_a5750c7b2ceae5b508e20e6ad5193433b}{class {\bfseries Skew}}\label{class_twist_a5750c7b2ceae5b508e20e6ad5193433b}
+
+\item 
+\hypertarget{class_twist_aa5999bd564ccacef1b18765d5220f58d}{class {\bfseries Homogeneous\+Transform}}\label{class_twist_aa5999bd564ccacef1b18765d5220f58d}
+
+\item 
+\hypertarget{class_twist_a22c177c74e1b9759be2a123b988235d5}{class {\bfseries Adjoint}}\label{class_twist_a22c177c74e1b9759be2a123b988235d5}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implements a 4x4 twist matrix with basic functionality such as exponents, logs etc. 
+
+\begin{DoxyNote}{Note}
+Author\+: Christos Bergeles 
+\end{DoxyNote}
+\begin{DoxyDate}{Date}
+2013-\/06-\/17 
+\end{DoxyDate}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_twist_a42776d552cc3751c1eec0ae1e26f1a58}{\index{Twist@{Twist}!Twist@{Twist}}
+\index{Twist@{Twist}!Twist@{Twist}}
+\subsubsection[{Twist}]{\setlength{\rightskip}{0pt plus 5cm}Twist\+::\+Twist (
+\begin{DoxyParamCaption}
+\item[{const {\bf Homogeneous\+Transform} \&}]{H\+T}
+\end{DoxyParamCaption}
+)}}\label{class_twist_a42776d552cc3751c1eec0ae1e26f1a58}
+
+
+Create a twist by taking the logarithm of a homogeneous transformation matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em H\+T} & a homogeneous transformation matrix. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_twist_a4d34345c28881dfacd18178fb114c6b2}{\index{Twist@{Twist}!Twist@{Twist}}
+\index{Twist@{Twist}!Twist@{Twist}}
+\subsubsection[{Twist}]{\setlength{\rightskip}{0pt plus 5cm}Twist\+::\+Twist (
+\begin{DoxyParamCaption}
+\item[{const arma\+::colvec\+::fixed$<$ 6 $>$ \&}]{v}
+\end{DoxyParamCaption}
+)}}\label{class_twist_a4d34345c28881dfacd18178fb114c6b2}
+
+
+Create a twist from a 6x1 vector of twist coordinates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & the 6x1 armadillo vector. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_twist_a65bba405b8213de85a94b6c499d35a64}{\index{Twist@{Twist}!Twist@{Twist}}
+\index{Twist@{Twist}!Twist@{Twist}}
+\subsubsection[{Twist}]{\setlength{\rightskip}{0pt plus 5cm}Twist\+::\+Twist (
+\begin{DoxyParamCaption}
+\item[{const double \&}]{t0, }
+\item[{const double \&}]{t1, }
+\item[{const double \&}]{t2, }
+\item[{const double \&}]{t3, }
+\item[{const double \&}]{t4, }
+\item[{const double \&}]{t5}
+\end{DoxyParamCaption}
+)}}\label{class_twist_a65bba405b8213de85a94b6c499d35a64}
+
+
+Create a twist using the 6 twist coordinates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t0-\/t6} & the twist coordinates as doubles. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_twist_adb6e00664c4656a9131389005fcfad50}{\index{Twist@{Twist}!at@{at}}
+\index{at@{at}!Twist@{Twist}}
+\subsubsection[{at}]{\setlength{\rightskip}{0pt plus 5cm}double Twist\+::at (
+\begin{DoxyParamCaption}
+\item[{const int \&}]{i, }
+\item[{const int \&}]{j}
+\end{DoxyParamCaption}
+) const}}\label{class_twist_adb6e00664c4656a9131389005fcfad50}
+
+
+Accessor function for ease of use. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & the i-\/th row of the matrix. \\
+\hline
+{\em j} & the j-\/th column of the matrix. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+No boundary check is performed. 
+\end{DoxyNote}
+\hypertarget{class_twist_aa13c6bffb6aad012280a4de936f911c9}{\index{Twist@{Twist}!axis@{axis}}
+\index{axis@{axis}!Twist@{Twist}}
+\subsubsection[{axis}]{\setlength{\rightskip}{0pt plus 5cm}arma\+::colvec\+::fixed$<$ 6 $>$ Twist\+::axis (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_twist_aa13c6bffb6aad012280a4de936f911c9}
+
+
+Calculate and return the axis of the twist. 
+
+\begin{DoxyReturn}{Returns}
+a 6x1 armadillo vector w containing the axis of the twist, with w(0\+:2) + $\ast$w(3\+:5), \{R\}. 
+\end{DoxyReturn}
+\hypertarget{class_twist_ab5b35a98ac132fb136de5ad7c9029a55}{\index{Twist@{Twist}!coordinates@{coordinates}}
+\index{coordinates@{coordinates}!Twist@{Twist}}
+\subsubsection[{coordinates}]{\setlength{\rightskip}{0pt plus 5cm}arma\+::vec\+::fixed$<$ 6 $>$ Twist\+::coordinates (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_twist_ab5b35a98ac132fb136de5ad7c9029a55}
+
+
+Calculate and return the 6x1 twist coordinates. 
+
+\begin{DoxyReturn}{Returns}
+armadillo 6x1 vector containing the coordinate. 
+\end{DoxyReturn}
+\hypertarget{class_twist_a7b48ecc2c97d3ab5b162d5b67915abaf}{\index{Twist@{Twist}!exp@{exp}}
+\index{exp@{exp}!Twist@{Twist}}
+\subsubsection[{exp}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Homogeneous\+Transform} Twist\+::exp (
+\begin{DoxyParamCaption}
+\item[{const double \&}]{theta = {\ttfamily 1}}
+\end{DoxyParamCaption}
+) const}}\label{class_twist_a7b48ecc2c97d3ab5b162d5b67915abaf}
+
+
+Create a homogeneous transformation matrix by taking the exponential of the twist. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em theta} & the magnitude of the rotation. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the homogeneous transformation matrix. 
+\end{DoxyReturn}
+\hypertarget{class_twist_a6eda20aad94ab2817a24e8900466ca1c}{\index{Twist@{Twist}!pitch@{pitch}}
+\index{pitch@{pitch}!Twist@{Twist}}
+\subsubsection[{pitch}]{\setlength{\rightskip}{0pt plus 5cm}arma\+::colvec\+::fixed$<$ 3 $>$ Twist\+::pitch (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_twist_a6eda20aad94ab2817a24e8900466ca1c}
+
+
+Calculate and return the pitch of the twist. 
+
+\begin{DoxyReturn}{Returns}
+a vector containing the pitch of the twist. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/cbergeles/\+Dropbox/prj/mevislab/\+Custom\+Libraries/\+General/\+Sources/\+Shared/\+Screws/twist.\+h\item 
+/\+Users/cbergeles/\+Dropbox/prj/mevislab/\+Custom\+Libraries/\+General/\+Sources/\+Shared/\+Screws/twist.\+cpp\end{DoxyCompactItemize}

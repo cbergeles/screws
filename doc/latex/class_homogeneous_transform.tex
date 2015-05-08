@@ -1,0 +1,220 @@
+\hypertarget{class_homogeneous_transform}{\section{Homogeneous\+Transform Class Reference}
+\label{class_homogeneous_transform}\index{Homogeneous\+Transform@{Homogeneous\+Transform}}
+}
+
+
+Implements a 4x4 homogeneous transformation matrix along with basic operators.  
+
+
+
+
+{\ttfamily \#include $<$homogeneous\+Transform.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_homogeneous_transform_a03379cc60fdc2aefbf7b29fa7cfc8cd4}{Homogeneous\+Transform} (const Rotation \&R, const Translation \&T)
+\begin{DoxyCompactList}\small\item\em Create a homogeneous transformation matrix from a rotation and a translation. \end{DoxyCompactList}\item 
+\hyperlink{class_homogeneous_transform_a6c318ba44621401f9ae818ef45f6c4c1}{Homogeneous\+Transform} (const arma\+::mat\+::fixed$<$ 4, 4 $>$ \&m)
+\begin{DoxyCompactList}\small\item\em Create a homogeneous transformation matrix from raw data. \end{DoxyCompactList}\item 
+\hypertarget{class_homogeneous_transform_aecbf1f1e9d0e535878c5c940ee0d4d84}{\hyperlink{class_homogeneous_transform_aecbf1f1e9d0e535878c5c940ee0d4d84}{Homogeneous\+Transform} ()}\label{class_homogeneous_transform_aecbf1f1e9d0e535878c5c940ee0d4d84}
+
+\begin{DoxyCompactList}\small\item\em Create a default homogeneous transformation unit matrix. \end{DoxyCompactList}\item 
+\hypertarget{class_homogeneous_transform_a1db68084f85eb15b7c1fa6011c0636a4}{\hyperlink{class_homogeneous_transform_a1db68084f85eb15b7c1fa6011c0636a4}{$\sim$\+Homogeneous\+Transform} ()}\label{class_homogeneous_transform_a1db68084f85eb15b7c1fa6011c0636a4}
+
+\begin{DoxyCompactList}\small\item\em Default destructor. \end{DoxyCompactList}\item 
+\hypertarget{class_homogeneous_transform_ad17be374a7db399b4cf95aa92c998dd1}{Translation \hyperlink{class_homogeneous_transform_ad17be374a7db399b4cf95aa92c998dd1}{get\+Translation} () const }\label{class_homogeneous_transform_ad17be374a7db399b4cf95aa92c998dd1}
+
+\begin{DoxyCompactList}\small\item\em Return the 3x1 translation vector. \end{DoxyCompactList}\item 
+void \hyperlink{class_homogeneous_transform_ae3ee4526c97a7b8f66a28b1f8ce50064}{set\+Translation} (const Translation \&T)
+\begin{DoxyCompactList}\small\item\em Change the translation part of the homogeneous transformation matrix. \end{DoxyCompactList}\item 
+\hypertarget{class_homogeneous_transform_a797c18c0b9ca86386ad41c796930b84d}{Rotation \hyperlink{class_homogeneous_transform_a797c18c0b9ca86386ad41c796930b84d}{get\+Rotation} () const }\label{class_homogeneous_transform_a797c18c0b9ca86386ad41c796930b84d}
+
+\begin{DoxyCompactList}\small\item\em Return the rotational part of the homogeneous transformation matrix. \end{DoxyCompactList}\item 
+void \hyperlink{class_homogeneous_transform_a7e886ffa6d5895a58a16a12f29deee03}{set\+Rotation} (const Rotation \&R)
+\begin{DoxyCompactList}\small\item\em Set the rotational part of the homegeneous transformation matrix. \end{DoxyCompactList}\item 
+\hyperlink{class_twist}{Twist} \hyperlink{class_homogeneous_transform_aef0b855f423a9a33cc2756f35de17644}{log} () const 
+\begin{DoxyCompactList}\small\item\em Calculate the twist (log) of the homogeneous transformation matrix. \end{DoxyCompactList}\item 
+\hyperlink{class_twist}{Twist} \hyperlink{class_homogeneous_transform_a8b70339a22dbdd11947f54e88def29b0}{twist} () const 
+\begin{DoxyCompactList}\small\item\em Calculate the twist (log) of the homogeneous transformation matrix. \end{DoxyCompactList}\item 
+\hypertarget{class_homogeneous_transform_a1b40d50970b8c1325c6ea0c4dd24014a}{\hyperlink{class_homogeneous_transform}{Homogeneous\+Transform} \hyperlink{class_homogeneous_transform_a1b40d50970b8c1325c6ea0c4dd24014a}{inv} () const }\label{class_homogeneous_transform_a1b40d50970b8c1325c6ea0c4dd24014a}
+
+\begin{DoxyCompactList}\small\item\em Perform fast inversion of the homogeneous transformation matrix. \end{DoxyCompactList}\item 
+\hypertarget{class_homogeneous_transform_af53a69f13c973961e76634106babd490}{\hyperlink{class_homogeneous_transform}{Homogeneous\+Transform} \& {\bfseries operator=} (\hyperlink{class_homogeneous_transform}{Homogeneous\+Transform} prototype)}\label{class_homogeneous_transform_af53a69f13c973961e76634106babd490}
+
+\item 
+\hypertarget{class_homogeneous_transform_ae6a22f06e782ba4a1521c7bc5d6348d6}{\hyperlink{class_homogeneous_transform}{Homogeneous\+Transform} {\bfseries operator$\ast$} (const \hyperlink{class_homogeneous_transform}{Homogeneous\+Transform} \&H)}\label{class_homogeneous_transform_ae6a22f06e782ba4a1521c7bc5d6348d6}
+
+\item 
+\hypertarget{class_homogeneous_transform_a8474418655ce3655e0c185afe7e4abd7}{Translation {\bfseries operator$\ast$} (const Translation \&T)}\label{class_homogeneous_transform_a8474418655ce3655e0c185afe7e4abd7}
+
+\item 
+\hypertarget{class_homogeneous_transform_af2f47018fcd470cee5ba7e7c69730d2c}{bool {\bfseries operator==} (const \hyperlink{class_homogeneous_transform}{Homogeneous\+Transform} \&H)}\label{class_homogeneous_transform_af2f47018fcd470cee5ba7e7c69730d2c}
+
+\item 
+\hypertarget{class_homogeneous_transform_a1d63d753b0f5b20e97e861da4a600b4f}{bool \hyperlink{class_homogeneous_transform_a1d63d753b0f5b20e97e861da4a600b4f}{is\+Valid} () const }\label{class_homogeneous_transform_a1d63d753b0f5b20e97e861da4a600b4f}
+
+\begin{DoxyCompactList}\small\item\em Perform verification that matrix is indeed in approriate format by checking the rotational component for validity. \end{DoxyCompactList}\item 
+\hypertarget{class_homogeneous_transform_a957a28b2e652d65ff28b3568e373583c}{void {\bfseries print} () const }\label{class_homogeneous_transform_a957a28b2e652d65ff28b3568e373583c}
+
+\item 
+double \hyperlink{class_homogeneous_transform_a2aa4fe380fe46ffb337f665fe9f4c8a5}{at} (const int \&i, const int \&j) const 
+\begin{DoxyCompactList}\small\item\em Access individual matrix elements. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_homogeneous_transform_a750420852e1c43779a3e6de1b3a9f158}{class {\bfseries Translation}}\label{class_homogeneous_transform_a750420852e1c43779a3e6de1b3a9f158}
+
+\item 
+\hypertarget{class_homogeneous_transform_aa9d2bf0f1d1d2655fb37b513d3159be3}{class {\bfseries Rotation}}\label{class_homogeneous_transform_aa9d2bf0f1d1d2655fb37b513d3159be3}
+
+\item 
+\hypertarget{class_homogeneous_transform_a5750c7b2ceae5b508e20e6ad5193433b}{class {\bfseries Skew}}\label{class_homogeneous_transform_a5750c7b2ceae5b508e20e6ad5193433b}
+
+\item 
+\hypertarget{class_homogeneous_transform_a5372d90dc99e27198192a07365c7e09e}{class {\bfseries Twist}}\label{class_homogeneous_transform_a5372d90dc99e27198192a07365c7e09e}
+
+\item 
+\hypertarget{class_homogeneous_transform_a22c177c74e1b9759be2a123b988235d5}{class {\bfseries Adjoint}}\label{class_homogeneous_transform_a22c177c74e1b9759be2a123b988235d5}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implements a 4x4 homogeneous transformation matrix along with basic operators. 
+
+\begin{DoxyNote}{Note}
+Author\+: Christos Bergeles 
+\end{DoxyNote}
+\begin{DoxyDate}{Date}
+2013/06/17 
+\end{DoxyDate}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_homogeneous_transform_a03379cc60fdc2aefbf7b29fa7cfc8cd4}{\index{Homogeneous\+Transform@{Homogeneous\+Transform}!Homogeneous\+Transform@{Homogeneous\+Transform}}
+\index{Homogeneous\+Transform@{Homogeneous\+Transform}!Homogeneous\+Transform@{Homogeneous\+Transform}}
+\subsubsection[{Homogeneous\+Transform}]{\setlength{\rightskip}{0pt plus 5cm}Homogeneous\+Transform\+::\+Homogeneous\+Transform (
+\begin{DoxyParamCaption}
+\item[{const Rotation \&}]{R, }
+\item[{const Translation \&}]{T}
+\end{DoxyParamCaption}
+)}}\label{class_homogeneous_transform_a03379cc60fdc2aefbf7b29fa7cfc8cd4}
+
+
+Create a homogeneous transformation matrix from a rotation and a translation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em R} & the Rotation matrix. \\
+\hline
+{\em T} & the Translation vector. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_homogeneous_transform_a6c318ba44621401f9ae818ef45f6c4c1}{\index{Homogeneous\+Transform@{Homogeneous\+Transform}!Homogeneous\+Transform@{Homogeneous\+Transform}}
+\index{Homogeneous\+Transform@{Homogeneous\+Transform}!Homogeneous\+Transform@{Homogeneous\+Transform}}
+\subsubsection[{Homogeneous\+Transform}]{\setlength{\rightskip}{0pt plus 5cm}Homogeneous\+Transform\+::\+Homogeneous\+Transform (
+\begin{DoxyParamCaption}
+\item[{const arma\+::mat\+::fixed$<$ 4, 4 $>$ \&}]{m}
+\end{DoxyParamCaption}
+)}}\label{class_homogeneous_transform_a6c318ba44621401f9ae818ef45f6c4c1}
+
+
+Create a homogeneous transformation matrix from raw data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & The 4x4 armadillo matrix. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_homogeneous_transform_a2aa4fe380fe46ffb337f665fe9f4c8a5}{\index{Homogeneous\+Transform@{Homogeneous\+Transform}!at@{at}}
+\index{at@{at}!Homogeneous\+Transform@{Homogeneous\+Transform}}
+\subsubsection[{at}]{\setlength{\rightskip}{0pt plus 5cm}double Homogeneous\+Transform\+::at (
+\begin{DoxyParamCaption}
+\item[{const int \&}]{i, }
+\item[{const int \&}]{j}
+\end{DoxyParamCaption}
+) const}}\label{class_homogeneous_transform_a2aa4fe380fe46ffb337f665fe9f4c8a5}
+
+
+Access individual matrix elements. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & the i-\/th row of the matrix \\
+\hline
+{\em j} & the j-\/th row of the matrix \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+No boundary check is performed. 
+\end{DoxyNote}
+\hypertarget{class_homogeneous_transform_aef0b855f423a9a33cc2756f35de17644}{\index{Homogeneous\+Transform@{Homogeneous\+Transform}!log@{log}}
+\index{log@{log}!Homogeneous\+Transform@{Homogeneous\+Transform}}
+\subsubsection[{log}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Twist} Homogeneous\+Transform\+::log (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_homogeneous_transform_aef0b855f423a9a33cc2756f35de17644}
+
+
+Calculate the twist (log) of the homogeneous transformation matrix. 
+
+\begin{DoxyReturn}{Returns}
+the 4x4 twist skew symmetric matrix. 
+\end{DoxyReturn}
+\hypertarget{class_homogeneous_transform_a7e886ffa6d5895a58a16a12f29deee03}{\index{Homogeneous\+Transform@{Homogeneous\+Transform}!set\+Rotation@{set\+Rotation}}
+\index{set\+Rotation@{set\+Rotation}!Homogeneous\+Transform@{Homogeneous\+Transform}}
+\subsubsection[{set\+Rotation}]{\setlength{\rightskip}{0pt plus 5cm}void Homogeneous\+Transform\+::set\+Rotation (
+\begin{DoxyParamCaption}
+\item[{const Rotation \&}]{R}
+\end{DoxyParamCaption}
+)}}\label{class_homogeneous_transform_a7e886ffa6d5895a58a16a12f29deee03}
+
+
+Set the rotational part of the homegeneous transformation matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em R} & the new rotational component. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_homogeneous_transform_ae3ee4526c97a7b8f66a28b1f8ce50064}{\index{Homogeneous\+Transform@{Homogeneous\+Transform}!set\+Translation@{set\+Translation}}
+\index{set\+Translation@{set\+Translation}!Homogeneous\+Transform@{Homogeneous\+Transform}}
+\subsubsection[{set\+Translation}]{\setlength{\rightskip}{0pt plus 5cm}void Homogeneous\+Transform\+::set\+Translation (
+\begin{DoxyParamCaption}
+\item[{const Translation \&}]{T}
+\end{DoxyParamCaption}
+)}}\label{class_homogeneous_transform_ae3ee4526c97a7b8f66a28b1f8ce50064}
+
+
+Change the translation part of the homogeneous transformation matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em T} & the new translation component. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_homogeneous_transform_a8b70339a22dbdd11947f54e88def29b0}{\index{Homogeneous\+Transform@{Homogeneous\+Transform}!twist@{twist}}
+\index{twist@{twist}!Homogeneous\+Transform@{Homogeneous\+Transform}}
+\subsubsection[{twist}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Twist} Homogeneous\+Transform\+::twist (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_homogeneous_transform_a8b70339a22dbdd11947f54e88def29b0}
+
+
+Calculate the twist (log) of the homogeneous transformation matrix. 
+
+\begin{DoxyReturn}{Returns}
+the 4x4 twist skew symmetric matrix. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/cbergeles/\+Dropbox/prj/mevislab/\+Custom\+Libraries/\+General/\+Sources/\+Shared/\+Screws/homogeneous\+Transform.\+h\item 
+/\+Users/cbergeles/\+Dropbox/prj/mevislab/\+Custom\+Libraries/\+General/\+Sources/\+Shared/\+Screws/homogeneous\+Transform.\+cpp\end{DoxyCompactItemize}

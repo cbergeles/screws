@@ -1,0 +1,379 @@
+\hypertarget{singletonscrews_1_1_skew}{\section{screws\+:\+:Skew$<$ Num\+Type $>$ Class Template Reference}
+\label{singletonscrews_1_1_skew}\index{screws\+::\+Skew$<$ Num\+Type $>$@{screws\+::\+Skew$<$ Num\+Type $>$}}
+}
+
+
+Implenets a class for the 3x3 skew symmetric rotation generators and their operations.  
+
+
+
+
+{\ttfamily \#include $<$skew.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{singletonscrews_1_1_skew_a1da0cff5c4f0dc9c5b75816d2d7d0253}{Skew} (const \hyperlink{singletonscrews_1_1_translation}{Translation}$<$ Num\+Type $>$ \&v)
+\begin{DoxyCompactList}\small\item\em Create a skew symmetric matrix out of a 3x1 vector. \end{DoxyCompactList}\item 
+\hyperlink{singletonscrews_1_1_skew_a973f5bedca322ee41e2bcc775d9a8221}{Skew} (const \hyperlink{singletonscrews_1_1_rotation}{Rotation}$<$ Num\+Type $>$ \&R)
+\begin{DoxyCompactList}\small\item\em Create a skew symmetric matrix by taking the log of a rotation matrix. \end{DoxyCompactList}\item 
+\hypertarget{singletonscrews_1_1_skew_adfbcd45cb6a3fcd6ab46e4a241bc0f5e}{\hyperlink{singletonscrews_1_1_skew_adfbcd45cb6a3fcd6ab46e4a241bc0f5e}{Skew} ()}\label{singletonscrews_1_1_skew_adfbcd45cb6a3fcd6ab46e4a241bc0f5e}
+
+\begin{DoxyCompactList}\small\item\em Default constructor with zeros. This correponds to the identity rotation. \end{DoxyCompactList}\item 
+\hypertarget{singletonscrews_1_1_skew_a1ee1b94645099f859b121dca035e8b97}{\hyperlink{singletonscrews_1_1_skew_a1ee1b94645099f859b121dca035e8b97}{$\sim$\+Skew} ()}\label{singletonscrews_1_1_skew_a1ee1b94645099f859b121dca035e8b97}
+
+\begin{DoxyCompactList}\small\item\em Default destructor. \end{DoxyCompactList}\item 
+\hyperlink{singletonscrews_1_1_skew}{Skew}$<$ Num\+Type $>$ \hyperlink{singletonscrews_1_1_skew_a9de36c93d0c6a72986d2258e00e1001f}{transpose} () const 
+\begin{DoxyCompactList}\small\item\em Transposes the skew. \end{DoxyCompactList}\item 
+\hyperlink{singletonscrews_1_1_rotation}{Rotation}$<$ Num\+Type $>$ \hyperlink{singletonscrews_1_1_skew_aee98d800c4c2aebfaf0a33a519a91969}{exp} (const Num\+Type \&theta=(Num\+Type) 1) const 
+\begin{DoxyCompactList}\small\item\em Calculate the exponential of the skew symmetric matrix. This corresponds to a rotation. \end{DoxyCompactList}\item 
+\hyperlink{singletonscrews_1_1_skew}{Skew}$<$ Num\+Type $>$ \hyperlink{singletonscrews_1_1_skew_ac4e56e4a13ddbde553d9b519dcdaf284}{normalised} () const 
+\begin{DoxyCompactList}\small\item\em Normalise and remove magnitude from skew symmetric matrix. Only rotation axis information remains. \end{DoxyCompactList}\item 
+Num\+Type \hyperlink{singletonscrews_1_1_skew_aeca188f486224d8ee823faf6c5f1326a}{norm} () const 
+\begin{DoxyCompactList}\small\item\em Calculate and return the norm of the skew. \end{DoxyCompactList}\item 
+Num\+Type \hyperlink{singletonscrews_1_1_skew_a193f541e45e6d15fcc5f8937e389fd94}{angle} () const 
+\begin{DoxyCompactList}\small\item\em Extract the rotation magnitude without normalising. \end{DoxyCompactList}\item 
+\hyperlink{singletonscrews_1_1_translation}{Vector3}$<$ Num\+Type $>$ \hyperlink{singletonscrews_1_1_skew_a833d247e47e08d6e5ce22d4c58edd3f8}{axis} () const 
+\begin{DoxyCompactList}\small\item\em Extract the axis of rotation. \end{DoxyCompactList}\item 
+const Num\+Type \& \hyperlink{singletonscrews_1_1_skew_a8eb6fd75d9231864e13768962007afda}{operator()} (const unsigned int \&i, const unsigned int \&j) const 
+\begin{DoxyCompactList}\small\item\em Return the requested element (read). \end{DoxyCompactList}\item 
+\hyperlink{singletonscrews_1_1_skew}{Skew}$<$ Num\+Type $>$ \hyperlink{singletonscrews_1_1_skew_a470218d531800781050e50c55078a565}{operator+} (const \hyperlink{singletonscrews_1_1_skew}{Skew}$<$ Num\+Type $>$ \&S) const 
+\begin{DoxyCompactList}\small\item\em Element-\/by-\/element addition of skew matrices. \end{DoxyCompactList}\item 
+const \hyperlink{singletonscrews_1_1_skew}{Skew}$<$ Num\+Type $>$ \& \hyperlink{singletonscrews_1_1_skew_a867c32141fb11e771f31072b6a7a9ab1}{operator+=} (const \hyperlink{singletonscrews_1_1_skew}{Skew}$<$ Num\+Type $>$ \&S)
+\begin{DoxyCompactList}\small\item\em Element-\/by-\/element in-\/place addition of skew matrices. \end{DoxyCompactList}\item 
+\hyperlink{singletonscrews_1_1_skew}{Skew}$<$ Num\+Type $>$ \hyperlink{singletonscrews_1_1_skew_afcea925bac6a79b527252cabe4ee5f8c}{operator$\ast$} (const Num\+Type \&value) const 
+\begin{DoxyCompactList}\small\item\em Element-\/by-\/element multiplication with a value. \end{DoxyCompactList}\item 
+const \hyperlink{singletonscrews_1_1_skew}{Skew}$<$ Num\+Type $>$ \& \hyperlink{singletonscrews_1_1_skew_a571df087bba75da0a6d5460a16cb67f3}{operator$\ast$=} (const Num\+Type \&value)
+\begin{DoxyCompactList}\small\item\em Element-\/by-\/element in-\/place multiplication with a value. \end{DoxyCompactList}\item 
+bool \hyperlink{singletonscrews_1_1_skew_a5ef9a9998496f77ce6e52d82718265c6}{operator==} (const \hyperlink{singletonscrews_1_1_skew}{Skew}$<$ Num\+Type $>$ \&S) const 
+\begin{DoxyCompactList}\small\item\em Element-\/by-\/element exact equality operator. \end{DoxyCompactList}\item 
+bool \hyperlink{singletonscrews_1_1_skew_aba8294876f1eb8bd01cf815a6b4737a7}{operator!=} (const \hyperlink{singletonscrews_1_1_skew}{Skew}$<$ Num\+Type $>$ \&S) const 
+\begin{DoxyCompactList}\small\item\em Inequality operator. \end{DoxyCompactList}\item 
+bool \hyperlink{singletonscrews_1_1_skew_ac09fbcd9eb22dd64615f63970e36ac15}{approx\+Eq} (const \hyperlink{singletonscrews_1_1_skew}{Skew}$<$ Num\+Type $>$ \&S, double eps=F\+L\+T\+\_\+\+E\+P\+S\+I\+L\+O\+N) const 
+\begin{DoxyCompactList}\small\item\em Approximal equality operator, within a given epsilon or system precision. \end{DoxyCompactList}\item 
+\hyperlink{singletonscrews_1_1_translation}{Vector3}$<$ Num\+Type $>$ \hyperlink{singletonscrews_1_1_skew_a4d47298ff6bcfb3a80989bf9bb39796f}{coordinates} () const 
+\begin{DoxyCompactList}\small\item\em Generates a 3x1 vector given a skew symmetric matrix. \end{DoxyCompactList}\item 
+bool \hyperlink{singletonscrews_1_1_skew_a48c651638f00597c1b66cac30b0b9981}{is\+Valid} () const 
+\begin{DoxyCompactList}\small\item\em Perform verification that the matrix corresponds to a rotation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{singletonscrews_1_1_skew_ab7c0885cd2c1a3400af71af202367e52}{void {\bfseries reset\+Data} ()}\label{singletonscrews_1_1_skew_ab7c0885cd2c1a3400af71af202367e52}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{singletonscrews_1_1_skew_a99cbbe9cb3fa347139803350d445171c}{Eigen\+::\+Matrix$<$ Num\+Type, 3, 3 $>$ {\bfseries \+\_\+data}}\label{singletonscrews_1_1_skew_a99cbbe9cb3fa347139803350d445171c}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{singletonscrews_1_1_skew_a71cdfb2347f288c41e58374b57613143}{{\footnotesize template$<$class Num\+Type\+Rot $>$ }\\class {\bfseries Rotation}}\label{singletonscrews_1_1_skew_a71cdfb2347f288c41e58374b57613143}
+
+\item 
+\hypertarget{singletonscrews_1_1_skew_a01e1886aafbf1483da899aba3b6c58da}{{\footnotesize template$<$class Num\+Type\+Trans $>$ }\\class {\bfseries Translation}}\label{singletonscrews_1_1_skew_a01e1886aafbf1483da899aba3b6c58da}
+
+\item 
+\hypertarget{singletonscrews_1_1_skew_a90f9fa90695f35a9b08d0e888ea4297e}{{\footnotesize template$<$class Num\+Type\+Twist $>$ }\\class {\bfseries Twist}}\label{singletonscrews_1_1_skew_a90f9fa90695f35a9b08d0e888ea4297e}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Num\+Type$>$class screws\+::\+Skew$<$ Num\+Type $>$}
+
+Implenets a class for the 3x3 skew symmetric rotation generators and their operations. 
+
+\begin{DoxyNote}{Note}
+Author\+: Christos Bergeles 
+\end{DoxyNote}
+\begin{DoxyDate}{Date}
+5th May 2015 
+\end{DoxyDate}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{singletonscrews_1_1_skew_a1da0cff5c4f0dc9c5b75816d2d7d0253}{\index{screws\+::\+Skew@{screws\+::\+Skew}!Skew@{Skew}}
+\index{Skew@{Skew}!screws\+::\+Skew@{screws\+::\+Skew}}
+\subsubsection[{Skew}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Num\+Type$>$ {\bf screws\+::\+Skew}$<$ Num\+Type $>$\+::{\bf Skew} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Translation}$<$ Num\+Type $>$ \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{singletonscrews_1_1_skew_a1da0cff5c4f0dc9c5b75816d2d7d0253}
+
+
+Create a skew symmetric matrix out of a 3x1 vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & the 3x1 vector, which also contains the angle information. \\
+\hline
+\end{DoxyParams}
+\hypertarget{singletonscrews_1_1_skew_a973f5bedca322ee41e2bcc775d9a8221}{\index{screws\+::\+Skew@{screws\+::\+Skew}!Skew@{Skew}}
+\index{Skew@{Skew}!screws\+::\+Skew@{screws\+::\+Skew}}
+\subsubsection[{Skew}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Num\+Type$>$ {\bf screws\+::\+Skew}$<$ Num\+Type $>$\+::{\bf Skew} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Rotation}$<$ Num\+Type $>$ \&}]{R}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{singletonscrews_1_1_skew_a973f5bedca322ee41e2bcc775d9a8221}
+
+
+Create a skew symmetric matrix by taking the log of a rotation matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em R} & the 3x3 rotation matrix. \\
+\hline
+{\em theta} & the extracted rotation angle. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{singletonscrews_1_1_skew_a193f541e45e6d15fcc5f8937e389fd94}{\index{screws\+::\+Skew@{screws\+::\+Skew}!angle@{angle}}
+\index{angle@{angle}!screws\+::\+Skew@{screws\+::\+Skew}}
+\subsubsection[{angle}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Num\+Type$>$ Num\+Type {\bf screws\+::\+Skew}$<$ Num\+Type $>$\+::angle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{singletonscrews_1_1_skew_a193f541e45e6d15fcc5f8937e389fd94}
+
+
+Extract the rotation magnitude without normalising. 
+
+\begin{DoxyReturn}{Returns}
+the magnitude of the rotation. 
+\end{DoxyReturn}
+\hypertarget{singletonscrews_1_1_skew_ac09fbcd9eb22dd64615f63970e36ac15}{\index{screws\+::\+Skew@{screws\+::\+Skew}!approx\+Eq@{approx\+Eq}}
+\index{approx\+Eq@{approx\+Eq}!screws\+::\+Skew@{screws\+::\+Skew}}
+\subsubsection[{approx\+Eq}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Num\+Type$>$ bool {\bf screws\+::\+Skew}$<$ Num\+Type $>$\+::approx\+Eq (
+\begin{DoxyParamCaption}
+\item[{const {\bf Skew}$<$ Num\+Type $>$ \&}]{S, }
+\item[{double}]{eps = {\ttfamily FLT\+\_\+EPSILON}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{singletonscrews_1_1_skew_ac09fbcd9eb22dd64615f63970e36ac15}
+
+
+Approximal equality operator, within a given epsilon or system precision. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S} & compared skew matrix. \\
+\hline
+{\em eps} & desired precision \mbox{[}default\+: machine precision\mbox{]}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{singletonscrews_1_1_skew_a833d247e47e08d6e5ce22d4c58edd3f8}{\index{screws\+::\+Skew@{screws\+::\+Skew}!axis@{axis}}
+\index{axis@{axis}!screws\+::\+Skew@{screws\+::\+Skew}}
+\subsubsection[{axis}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Num\+Type$>$ {\bf Vector3}$<$Num\+Type$>$ {\bf screws\+::\+Skew}$<$ Num\+Type $>$\+::axis (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{singletonscrews_1_1_skew_a833d247e47e08d6e5ce22d4c58edd3f8}
+
+
+Extract the axis of rotation. 
+
+\begin{DoxyReturn}{Returns}
+the axis of rotation as a 3x1 vector. 
+\end{DoxyReturn}
+\hypertarget{singletonscrews_1_1_skew_a4d47298ff6bcfb3a80989bf9bb39796f}{\index{screws\+::\+Skew@{screws\+::\+Skew}!coordinates@{coordinates}}
+\index{coordinates@{coordinates}!screws\+::\+Skew@{screws\+::\+Skew}}
+\subsubsection[{coordinates}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Num\+Type$>$ {\bf Vector3}$<$Num\+Type$>$ {\bf screws\+::\+Skew}$<$ Num\+Type $>$\+::coordinates (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{singletonscrews_1_1_skew_a4d47298ff6bcfb3a80989bf9bb39796f}
+
+
+Generates a 3x1 vector given a skew symmetric matrix. 
+
+\begin{DoxyReturn}{Returns}
+the 3x1 vector. 
+\end{DoxyReturn}
+\hypertarget{singletonscrews_1_1_skew_aee98d800c4c2aebfaf0a33a519a91969}{\index{screws\+::\+Skew@{screws\+::\+Skew}!exp@{exp}}
+\index{exp@{exp}!screws\+::\+Skew@{screws\+::\+Skew}}
+\subsubsection[{exp}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Num\+Type$>$ {\bf Rotation}$<$Num\+Type$>$ {\bf screws\+::\+Skew}$<$ Num\+Type $>$\+::exp (
+\begin{DoxyParamCaption}
+\item[{const Num\+Type \&}]{theta = {\ttfamily (NumType)1}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{singletonscrews_1_1_skew_aee98d800c4c2aebfaf0a33a519a91969}
+
+
+Calculate the exponential of the skew symmetric matrix. This corresponds to a rotation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em theta} & the rotation magnitude. \\
+\hline
+\end{DoxyParams}
+\hypertarget{singletonscrews_1_1_skew_a48c651638f00597c1b66cac30b0b9981}{\index{screws\+::\+Skew@{screws\+::\+Skew}!is\+Valid@{is\+Valid}}
+\index{is\+Valid@{is\+Valid}!screws\+::\+Skew@{screws\+::\+Skew}}
+\subsubsection[{is\+Valid}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Num\+Type$>$ bool {\bf screws\+::\+Skew}$<$ Num\+Type $>$\+::is\+Valid (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{singletonscrews_1_1_skew_a48c651638f00597c1b66cac30b0b9981}
+
+
+Perform verification that the matrix corresponds to a rotation. 
+
+\begin{DoxyReturn}{Returns}
+true if the matrix corresponds to a rotation, false otherwise. 
+\end{DoxyReturn}
+\hypertarget{singletonscrews_1_1_skew_aeca188f486224d8ee823faf6c5f1326a}{\index{screws\+::\+Skew@{screws\+::\+Skew}!norm@{norm}}
+\index{norm@{norm}!screws\+::\+Skew@{screws\+::\+Skew}}
+\subsubsection[{norm}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Num\+Type$>$ Num\+Type {\bf screws\+::\+Skew}$<$ Num\+Type $>$\+::norm (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{singletonscrews_1_1_skew_aeca188f486224d8ee823faf6c5f1326a}
+
+
+Calculate and return the norm of the skew. 
+
+\begin{DoxyReturn}{Returns}
+the norm of the skew. 
+\end{DoxyReturn}
+\hypertarget{singletonscrews_1_1_skew_ac4e56e4a13ddbde553d9b519dcdaf284}{\index{screws\+::\+Skew@{screws\+::\+Skew}!normalised@{normalised}}
+\index{normalised@{normalised}!screws\+::\+Skew@{screws\+::\+Skew}}
+\subsubsection[{normalised}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Num\+Type$>$ {\bf Skew}$<$Num\+Type$>$ {\bf screws\+::\+Skew}$<$ Num\+Type $>$\+::normalised (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{singletonscrews_1_1_skew_ac4e56e4a13ddbde553d9b519dcdaf284}
+
+
+Normalise and remove magnitude from skew symmetric matrix. Only rotation axis information remains. 
+
+\begin{DoxyReturn}{Returns}
+the normalised skew. 
+\end{DoxyReturn}
+\hypertarget{singletonscrews_1_1_skew_aba8294876f1eb8bd01cf815a6b4737a7}{\index{screws\+::\+Skew@{screws\+::\+Skew}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!screws\+::\+Skew@{screws\+::\+Skew}}
+\subsubsection[{operator"!=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Num\+Type$>$ bool {\bf screws\+::\+Skew}$<$ Num\+Type $>$\+::operator!= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Skew}$<$ Num\+Type $>$ \&}]{S}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{singletonscrews_1_1_skew_aba8294876f1eb8bd01cf815a6b4737a7}
+
+
+Inequality operator. 
+
+\begin{DoxyReturn}{Returns}
+true if one of the element-\/by-\/element comparisons return true. Otherwise, false. 
+\end{DoxyReturn}
+\hypertarget{singletonscrews_1_1_skew_a8eb6fd75d9231864e13768962007afda}{\index{screws\+::\+Skew@{screws\+::\+Skew}!operator()@{operator()}}
+\index{operator()@{operator()}!screws\+::\+Skew@{screws\+::\+Skew}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Num\+Type$>$ const Num\+Type\& {\bf screws\+::\+Skew}$<$ Num\+Type $>$\+::operator() (
+\begin{DoxyParamCaption}
+\item[{const unsigned int \&}]{i, }
+\item[{const unsigned int \&}]{j}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{singletonscrews_1_1_skew_a8eb6fd75d9231864e13768962007afda}
+
+
+Return the requested element (read). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & the index of the row. \\
+\hline
+{\em j} & the index of the column. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+No boundary check is performed. 
+\end{DoxyNote}
+\hypertarget{singletonscrews_1_1_skew_afcea925bac6a79b527252cabe4ee5f8c}{\index{screws\+::\+Skew@{screws\+::\+Skew}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!screws\+::\+Skew@{screws\+::\+Skew}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Num\+Type$>$ {\bf Skew}$<$Num\+Type$>$ {\bf screws\+::\+Skew}$<$ Num\+Type $>$\+::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const Num\+Type \&}]{value}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{singletonscrews_1_1_skew_afcea925bac6a79b527252cabe4ee5f8c}
+
+
+Element-\/by-\/element multiplication with a value. 
+
+\begin{DoxyNote}{Note}
+This operation corresponds to scaling the rotation angle. 
+\end{DoxyNote}
+\hypertarget{singletonscrews_1_1_skew_a571df087bba75da0a6d5460a16cb67f3}{\index{screws\+::\+Skew@{screws\+::\+Skew}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!screws\+::\+Skew@{screws\+::\+Skew}}
+\subsubsection[{operator$\ast$=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Num\+Type$>$ const {\bf Skew}$<$Num\+Type$>$\& {\bf screws\+::\+Skew}$<$ Num\+Type $>$\+::operator$\ast$= (
+\begin{DoxyParamCaption}
+\item[{const Num\+Type \&}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{singletonscrews_1_1_skew_a571df087bba75da0a6d5460a16cb67f3}
+
+
+Element-\/by-\/element in-\/place multiplication with a value. 
+
+\begin{DoxyNote}{Note}
+This operation corresponds to scaling the rotation angle. 
+\end{DoxyNote}
+\hypertarget{singletonscrews_1_1_skew_a470218d531800781050e50c55078a565}{\index{screws\+::\+Skew@{screws\+::\+Skew}!operator+@{operator+}}
+\index{operator+@{operator+}!screws\+::\+Skew@{screws\+::\+Skew}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Num\+Type$>$ {\bf Skew}$<$Num\+Type$>$ {\bf screws\+::\+Skew}$<$ Num\+Type $>$\+::operator+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Skew}$<$ Num\+Type $>$ \&}]{S}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{singletonscrews_1_1_skew_a470218d531800781050e50c55078a565}
+
+
+Element-\/by-\/element addition of skew matrices. 
+
+\begin{DoxyNote}{Note}
+This operation corresponds to multiplication of the respective rotations. 
+\end{DoxyNote}
+\hypertarget{singletonscrews_1_1_skew_a867c32141fb11e771f31072b6a7a9ab1}{\index{screws\+::\+Skew@{screws\+::\+Skew}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!screws\+::\+Skew@{screws\+::\+Skew}}
+\subsubsection[{operator+=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Num\+Type$>$ const {\bf Skew}$<$Num\+Type$>$\& {\bf screws\+::\+Skew}$<$ Num\+Type $>$\+::operator+= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Skew}$<$ Num\+Type $>$ \&}]{S}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{singletonscrews_1_1_skew_a867c32141fb11e771f31072b6a7a9ab1}
+
+
+Element-\/by-\/element in-\/place addition of skew matrices. 
+
+\begin{DoxyNote}{Note}
+This operation corresponds to multiplication of the respective rotations. 
+\end{DoxyNote}
+\hypertarget{singletonscrews_1_1_skew_a5ef9a9998496f77ce6e52d82718265c6}{\index{screws\+::\+Skew@{screws\+::\+Skew}!operator==@{operator==}}
+\index{operator==@{operator==}!screws\+::\+Skew@{screws\+::\+Skew}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Num\+Type$>$ bool {\bf screws\+::\+Skew}$<$ Num\+Type $>$\+::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf Skew}$<$ Num\+Type $>$ \&}]{S}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{singletonscrews_1_1_skew_a5ef9a9998496f77ce6e52d82718265c6}
+
+
+Element-\/by-\/element exact equality operator. 
+
+\begin{DoxyReturn}{Returns}
+true if all elements are exactly equal 
+\end{DoxyReturn}
+\hypertarget{singletonscrews_1_1_skew_a9de36c93d0c6a72986d2258e00e1001f}{\index{screws\+::\+Skew@{screws\+::\+Skew}!transpose@{transpose}}
+\index{transpose@{transpose}!screws\+::\+Skew@{screws\+::\+Skew}}
+\subsubsection[{transpose}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Num\+Type$>$ {\bf Skew}$<$Num\+Type$>$ {\bf screws\+::\+Skew}$<$ Num\+Type $>$\+::transpose (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{singletonscrews_1_1_skew_a9de36c93d0c6a72986d2258e00e1001f}
+
+
+Transposes the skew. 
+
+\begin{DoxyReturn}{Returns}
+the transposed skew. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/cbergeles/\+Dropbox/prj/mevislab/\+Custom\+Libraries/\+General/\+Sources/\+Shared/\+Screws/rotation.\+hpp\item 
+/\+Users/cbergeles/\+Dropbox/prj/mevislab/\+Custom\+Libraries/\+General/\+Sources/\+Shared/\+Screws/skew.\+hpp\end{DoxyCompactItemize}

@@ -1,0 +1,189 @@
+\hypertarget{class_skew}{\section{Skew Class Reference}
+\label{class_skew}\index{Skew@{Skew}}
+}
+
+
+Implenets a class for the 3x3 skew symmetric rotation generators and their operations.  
+
+
+
+
+{\ttfamily \#include $<$skew.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_skew_ac94402e87a361c0e229fa325cec71d11}{Skew} (const arma\+::colvec\+::fixed$<$ 3 $>$ \&v)
+\begin{DoxyCompactList}\small\item\em Create a skew symmetric matrix out of a 3x1 vector. \end{DoxyCompactList}\item 
+\hyperlink{class_skew_a7438a50cb870b524e3c440c5049e2bbb}{Skew} (const Rotation \&R)
+\begin{DoxyCompactList}\small\item\em Create a skew symmetric matrix by taking the log of a rotation matrix. \end{DoxyCompactList}\item 
+\hypertarget{class_skew_af0089eacd45635ee1d10a40e5e7f393b}{\hyperlink{class_skew_af0089eacd45635ee1d10a40e5e7f393b}{Skew} ()}\label{class_skew_af0089eacd45635ee1d10a40e5e7f393b}
+
+\begin{DoxyCompactList}\small\item\em Default constructor with zeros. This correponds to the identity rotation. \end{DoxyCompactList}\item 
+\hypertarget{class_skew_aa9b1176337edab3abcd3598dc28e5168}{\hyperlink{class_skew_aa9b1176337edab3abcd3598dc28e5168}{$\sim$\+Skew} ()}\label{class_skew_aa9b1176337edab3abcd3598dc28e5168}
+
+\begin{DoxyCompactList}\small\item\em Default destructor. \end{DoxyCompactList}\item 
+\hypertarget{class_skew_a53b45c74a33461f35ce73f42e6bc58bc}{\hyperlink{class_skew}{Skew} \hyperlink{class_skew_a53b45c74a33461f35ce73f42e6bc58bc}{t} () const }\label{class_skew_a53b45c74a33461f35ce73f42e6bc58bc}
+
+\begin{DoxyCompactList}\small\item\em Transposes the skew. \end{DoxyCompactList}\item 
+Rotation \hyperlink{class_skew_a18996d5ce875876b923aeeb7509dc676}{exp} (const double \&theta=1) const 
+\begin{DoxyCompactList}\small\item\em Calculate the exponential of the skew symmetric matrix. This corresponds to a rotation. \end{DoxyCompactList}\item 
+\hypertarget{class_skew_ab0ea378d48ef17d8c43fca04ac82bc92}{void \hyperlink{class_skew_ab0ea378d48ef17d8c43fca04ac82bc92}{normalise} ()}\label{class_skew_ab0ea378d48ef17d8c43fca04ac82bc92}
+
+\begin{DoxyCompactList}\small\item\em Normalise and remove magnitude from skew symmetric matrix. Only rotation axis information remains. \end{DoxyCompactList}\item 
+double \hyperlink{class_skew_a29af21b60bef3261c2ce26d4faa75ca0}{extract\+Theta} () const 
+\begin{DoxyCompactList}\small\item\em Extract the rotation magnitude without normalising. \end{DoxyCompactList}\item 
+double \hyperlink{class_skew_a40bb97a5c3554a8cd5735612f1210658}{at} (const int \&i, const int \&j) const 
+\begin{DoxyCompactList}\small\item\em Accessor function for ease of use. \end{DoxyCompactList}\item 
+\hypertarget{class_skew_a16082eac6e0980ff5e5ae66309474184}{\hyperlink{class_skew}{Skew} \hyperlink{class_skew_a16082eac6e0980ff5e5ae66309474184}{operator+} (const \hyperlink{class_skew}{Skew} \&S) const }\label{class_skew_a16082eac6e0980ff5e5ae66309474184}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_skew}{Skew} matrices support addition, which corresponds to multiplication of the respective rotations. \end{DoxyCompactList}\item 
+\hypertarget{class_skew_ad568b6a08b7a906afdb7ba94acaa4ef0}{bool {\bfseries operator==} (const \hyperlink{class_skew}{Skew} \&S) const }\label{class_skew_ad568b6a08b7a906afdb7ba94acaa4ef0}
+
+\item 
+arma\+::colvec\+::fixed$<$ 3 $>$ \hyperlink{class_skew_a2ec70266d6a21bfb410787ca74bfc04b}{coordinates} () const 
+\begin{DoxyCompactList}\small\item\em Generates a 3x1 vector given a skew symmetric matrix. \end{DoxyCompactList}\item 
+\hypertarget{class_skew_ae39506ad700f9e41abd8adc1d736565a}{bool \hyperlink{class_skew_ae39506ad700f9e41abd8adc1d736565a}{is\+Valid} () const }\label{class_skew_ae39506ad700f9e41abd8adc1d736565a}
+
+\begin{DoxyCompactList}\small\item\em Perform verification that matrix is indeed in appropriate format by checking if it is in the appropriate format. \end{DoxyCompactList}\item 
+\hypertarget{class_skew_a74d1c39c5b63456bd92f174b439a312f}{void {\bfseries print} () const }\label{class_skew_a74d1c39c5b63456bd92f174b439a312f}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_skew_aa5999bd564ccacef1b18765d5220f58d}{class {\bfseries Homogeneous\+Transform}}\label{class_skew_aa5999bd564ccacef1b18765d5220f58d}
+
+\item 
+\hypertarget{class_skew_a5372d90dc99e27198192a07365c7e09e}{class {\bfseries Twist}}\label{class_skew_a5372d90dc99e27198192a07365c7e09e}
+
+\item 
+\hypertarget{class_skew_aa9d2bf0f1d1d2655fb37b513d3159be3}{class {\bfseries Rotation}}\label{class_skew_aa9d2bf0f1d1d2655fb37b513d3159be3}
+
+\item 
+\hypertarget{class_skew_a22c177c74e1b9759be2a123b988235d5}{class {\bfseries Adjoint}}\label{class_skew_a22c177c74e1b9759be2a123b988235d5}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implenets a class for the 3x3 skew symmetric rotation generators and their operations. 
+
+\begin{DoxyNote}{Note}
+Author\+: Christos Bergeles 
+\end{DoxyNote}
+\begin{DoxyDate}{Date}
+2013/06/17 
+\end{DoxyDate}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_skew_ac94402e87a361c0e229fa325cec71d11}{\index{Skew@{Skew}!Skew@{Skew}}
+\index{Skew@{Skew}!Skew@{Skew}}
+\subsubsection[{Skew}]{\setlength{\rightskip}{0pt plus 5cm}Skew\+::\+Skew (
+\begin{DoxyParamCaption}
+\item[{const arma\+::colvec\+::fixed$<$ 3 $>$ \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}}\label{class_skew_ac94402e87a361c0e229fa325cec71d11}
+
+
+Create a skew symmetric matrix out of a 3x1 vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & the 3x1 vector. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_skew_a7438a50cb870b524e3c440c5049e2bbb}{\index{Skew@{Skew}!Skew@{Skew}}
+\index{Skew@{Skew}!Skew@{Skew}}
+\subsubsection[{Skew}]{\setlength{\rightskip}{0pt plus 5cm}Skew\+::\+Skew (
+\begin{DoxyParamCaption}
+\item[{const Rotation \&}]{R}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}}\label{class_skew_a7438a50cb870b524e3c440c5049e2bbb}
+
+
+Create a skew symmetric matrix by taking the log of a rotation matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em R} & the 3x3 rotation matrix. \\
+\hline
+{\em theta} & the extracted rotation angle. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_skew_a40bb97a5c3554a8cd5735612f1210658}{\index{Skew@{Skew}!at@{at}}
+\index{at@{at}!Skew@{Skew}}
+\subsubsection[{at}]{\setlength{\rightskip}{0pt plus 5cm}double Skew\+::at (
+\begin{DoxyParamCaption}
+\item[{const int \&}]{i, }
+\item[{const int \&}]{j}
+\end{DoxyParamCaption}
+) const}}\label{class_skew_a40bb97a5c3554a8cd5735612f1210658}
+
+
+Accessor function for ease of use. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & the i-\/th row of the matrix. \\
+\hline
+{\em j} & the j-\/th column of the matrix. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+No boundary check is performed. 
+\end{DoxyNote}
+\hypertarget{class_skew_a2ec70266d6a21bfb410787ca74bfc04b}{\index{Skew@{Skew}!coordinates@{coordinates}}
+\index{coordinates@{coordinates}!Skew@{Skew}}
+\subsubsection[{coordinates}]{\setlength{\rightskip}{0pt plus 5cm}arma\+::colvec\+::fixed$<$ 3 $>$ Skew\+::coordinates (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_skew_a2ec70266d6a21bfb410787ca74bfc04b}
+
+
+Generates a 3x1 vector given a skew symmetric matrix. 
+
+\begin{DoxyReturn}{Returns}
+3x1 armadillo vector. 
+\end{DoxyReturn}
+\hypertarget{class_skew_a18996d5ce875876b923aeeb7509dc676}{\index{Skew@{Skew}!exp@{exp}}
+\index{exp@{exp}!Skew@{Skew}}
+\subsubsection[{exp}]{\setlength{\rightskip}{0pt plus 5cm}Rotation Skew\+::exp (
+\begin{DoxyParamCaption}
+\item[{const double \&}]{theta = {\ttfamily 1}}
+\end{DoxyParamCaption}
+) const}}\label{class_skew_a18996d5ce875876b923aeeb7509dc676}
+
+
+Calculate the exponential of the skew symmetric matrix. This corresponds to a rotation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em theta} & the rotation magnitude. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_skew_a29af21b60bef3261c2ce26d4faa75ca0}{\index{Skew@{Skew}!extract\+Theta@{extract\+Theta}}
+\index{extract\+Theta@{extract\+Theta}!Skew@{Skew}}
+\subsubsection[{extract\+Theta}]{\setlength{\rightskip}{0pt plus 5cm}double Skew\+::extract\+Theta (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_skew_a29af21b60bef3261c2ce26d4faa75ca0}
+
+
+Extract the rotation magnitude without normalising. 
+
+\begin{DoxyReturn}{Returns}
+the magnitude of the rotation. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/cbergeles/\+Dropbox/prj/mevislab/\+Custom\+Libraries/\+General/\+Sources/\+Shared/\+Screws/skew.\+h\item 
+/\+Users/cbergeles/\+Dropbox/prj/mevislab/\+Custom\+Libraries/\+General/\+Sources/\+Shared/\+Screws/skew.\+cpp\end{DoxyCompactItemize}

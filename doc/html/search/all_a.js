@@ -1,0 +1,6 @@
+var searchData=
+[
+  ['rotation',['Rotation',['../singletonscrews_1_1_rotation.html',1,'screws']]],
+  ['rotation',['rotation',['../classscrews_1_1_homogeneous_transform.html#a6ff95f963c60c77571321e03d845b588',1,'screws::HomogeneousTransform::rotation()'],['../singletonscrews_1_1_rotation.html#a6e84b8c6ff433fb45a4549df8e8e38c6',1,'screws::Rotation::Rotation()'],['../singletonscrews_1_1_rotation.html#a39ea7087dcc2a48f2b937e97ce42ff00',1,'screws::Rotation::Rotation(const Translation&lt; NumType &gt; &amp;c0, const Translation&lt; NumType &gt; &amp;c1, const Translation&lt; NumType &gt; &amp;c2)'],['../singletonscrews_1_1_rotation.html#a907da04fc1292357510ed18e9b25c05b',1,'screws::Rotation::Rotation(const char &amp;axis, const NumType &amp;theta)'],['../singletonscrews_1_1_rotation.html#a34694b15ae0316ce17fe445802a3b3a1',1,'screws::Rotation::Rotation(const Vector3&lt; NumType &gt; &amp;axisVector, const NumType &amp;theta)'],['../singletonscrews_1_1_rotation.html#afc1c77ce3202b734e28727098177384d',1,'screws::Rotation::Rotation(const Vector3&lt; NumType &gt; &amp;zAxis)']]],
+  ['rpy',['rpy',['../singletonscrews_1_1_rotation.html#acd934657ce41abab74f4bbafb9781ae5',1,'screws::Rotation']]]
+];

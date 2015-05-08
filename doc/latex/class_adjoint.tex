@@ -1,0 +1,158 @@
+\hypertarget{class_adjoint}{\section{Adjoint Class Reference}
+\label{class_adjoint}\index{Adjoint@{Adjoint}}
+}
+
+
+Implements a 6x6 adjoint matrix with basic functionality.  
+
+
+
+
+{\ttfamily \#include $<$adjoint.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_adjoint_a3f7aa139d7726a6a01b995ce8d9811d8}{\hyperlink{class_adjoint_a3f7aa139d7726a6a01b995ce8d9811d8}{Adjoint} ()}\label{class_adjoint_a3f7aa139d7726a6a01b995ce8d9811d8}
+
+\begin{DoxyCompactList}\small\item\em Create a zero 6x6 matrix for the \hyperlink{class_adjoint}{Adjoint}. \end{DoxyCompactList}\item 
+\hyperlink{class_adjoint_ac41ccafac31c30023510cf12e761a192}{Adjoint} (const Rotation \&R, const Translation \&T)
+\begin{DoxyCompactList}\small\item\em Create an adjoint matrix from a Rotation and a Translation. \end{DoxyCompactList}\item 
+\hyperlink{class_adjoint_a363b30fee12fe21c843bb5cabf6655f2}{Adjoint} (const Homogeneous\+Transform \&H)
+\begin{DoxyCompactList}\small\item\em Create an adjoint for the given homogeneous transformation matrix. \end{DoxyCompactList}\item 
+\hypertarget{class_adjoint_ae7d182127cb44e0bd552f588eb04673b}{\hyperlink{class_adjoint_ae7d182127cb44e0bd552f588eb04673b}{$\sim$\+Adjoint} ()}\label{class_adjoint_ae7d182127cb44e0bd552f588eb04673b}
+
+\begin{DoxyCompactList}\small\item\em Default destructor. \end{DoxyCompactList}\item 
+double \hyperlink{class_adjoint_ad7ee6b3bcbc5e51ba5295d9722330a8e}{at} (const int \&i, const int \&j)
+\begin{DoxyCompactList}\small\item\em Accessor function for ease of use. \end{DoxyCompactList}\item 
+\hypertarget{class_adjoint_ae5cac302619067e4df66a518d16ec061}{\hyperlink{class_adjoint}{Adjoint} \hyperlink{class_adjoint_ae5cac302619067e4df66a518d16ec061}{inv} () const }\label{class_adjoint_ae5cac302619067e4df66a518d16ec061}
+
+\begin{DoxyCompactList}\small\item\em Calculates the inverse of the adjoint in a computationally efficient way. \end{DoxyCompactList}\item 
+arma\+::colvec\+::fixed$<$ 6 $>$ \hyperlink{class_adjoint_a7f124bcc9d1223500bcb50b136e4ab3e}{operator$\ast$} (const arma\+::vec\+::fixed$<$ 6 $>$ \&ksi)
+\begin{DoxyCompactList}\small\item\em Handle multiplication with a twist coordinates vector (6x1). \end{DoxyCompactList}\item 
+arma\+::mat \hyperlink{class_adjoint_ac3e9632ce00b2c2b4b33eb5624898a2e}{operator$\ast$} (const arma\+::mat \&jacobian)
+\begin{DoxyCompactList}\small\item\em Handle multiplication with a jacobian. \end{DoxyCompactList}\item 
+\hypertarget{class_adjoint_aebee90d2631fae63268ce056cd440c5b}{bool {\bfseries operator==} (const \hyperlink{class_adjoint}{Adjoint} \&A)}\label{class_adjoint_aebee90d2631fae63268ce056cd440c5b}
+
+\item 
+\hypertarget{class_adjoint_aa8d7c09bbeaec0b1fbbc6258bfb37b37}{void {\bfseries print} () const }\label{class_adjoint_aa8d7c09bbeaec0b1fbbc6258bfb37b37}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implements a 6x6 adjoint matrix with basic functionality. 
+
+\begin{DoxyNote}{Note}
+Author\+: Christos Bergeles 
+\end{DoxyNote}
+\begin{DoxyDate}{Date}
+2013-\/07-\/02 
+\end{DoxyDate}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_adjoint_ac41ccafac31c30023510cf12e761a192}{\index{Adjoint@{Adjoint}!Adjoint@{Adjoint}}
+\index{Adjoint@{Adjoint}!Adjoint@{Adjoint}}
+\subsubsection[{Adjoint}]{\setlength{\rightskip}{0pt plus 5cm}Adjoint\+::\+Adjoint (
+\begin{DoxyParamCaption}
+\item[{const Rotation \&}]{R, }
+\item[{const Translation \&}]{T}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}}\label{class_adjoint_ac41ccafac31c30023510cf12e761a192}
+
+
+Create an adjoint matrix from a Rotation and a Translation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em R} & the rotational component. \\
+\hline
+{\em T} & the translational component. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_adjoint_a363b30fee12fe21c843bb5cabf6655f2}{\index{Adjoint@{Adjoint}!Adjoint@{Adjoint}}
+\index{Adjoint@{Adjoint}!Adjoint@{Adjoint}}
+\subsubsection[{Adjoint}]{\setlength{\rightskip}{0pt plus 5cm}Adjoint\+::\+Adjoint (
+\begin{DoxyParamCaption}
+\item[{const Homogeneous\+Transform \&}]{H}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}}\label{class_adjoint_a363b30fee12fe21c843bb5cabf6655f2}
+
+
+Create an adjoint for the given homogeneous transformation matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em H} & the homogeneous transformation matrix. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_adjoint_ad7ee6b3bcbc5e51ba5295d9722330a8e}{\index{Adjoint@{Adjoint}!at@{at}}
+\index{at@{at}!Adjoint@{Adjoint}}
+\subsubsection[{at}]{\setlength{\rightskip}{0pt plus 5cm}double Adjoint\+::at (
+\begin{DoxyParamCaption}
+\item[{const int \&}]{i, }
+\item[{const int \&}]{j}
+\end{DoxyParamCaption}
+)}}\label{class_adjoint_ad7ee6b3bcbc5e51ba5295d9722330a8e}
+
+
+Accessor function for ease of use. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & the i-\/th row of the matrix. \\
+\hline
+{\em j} & the j-\/th row of the matrix. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+No boundary check is performed. 
+\end{DoxyNote}
+\hypertarget{class_adjoint_a7f124bcc9d1223500bcb50b136e4ab3e}{\index{Adjoint@{Adjoint}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Adjoint@{Adjoint}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}arma\+::vec\+::fixed$<$ 6 $>$ Adjoint\+::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const arma\+::vec\+::fixed$<$ 6 $>$ \&}]{ksi}
+\end{DoxyParamCaption}
+)}}\label{class_adjoint_a7f124bcc9d1223500bcb50b136e4ab3e}
+
+
+Handle multiplication with a twist coordinates vector (6x1). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ksi} & the 6x1 coordinates vector. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+No dimension check for ksi is performed. 
+\end{DoxyNote}
+\hypertarget{class_adjoint_ac3e9632ce00b2c2b4b33eb5624898a2e}{\index{Adjoint@{Adjoint}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Adjoint@{Adjoint}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}arma\+::mat Adjoint\+::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const arma\+::mat \&}]{jacobian}
+\end{DoxyParamCaption}
+)}}\label{class_adjoint_ac3e9632ce00b2c2b4b33eb5624898a2e}
+
+
+Handle multiplication with a jacobian. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em jacobian} & the 6x\+N jacobian matrix. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+No dimension check for jacobian is performed. 
+\end{DoxyNote}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/cbergeles/\+Dropbox/prj/mevislab/\+Custom\+Libraries/\+General/\+Sources/\+Shared/\+Screws/adjoint.\+hpp\item 
+/\+Users/cbergeles/\+Dropbox/prj/mevislab/\+Custom\+Libraries/\+General/\+Sources/\+Shared/\+Screws/adjoint.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,126 @@
+\contentsline {chapter}{\numberline {1}Class Index}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Class List}{1}{section.1.1}
+\contentsline {chapter}{\numberline {2}Class Documentation}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Adjoint Class Reference}{3}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Detailed Description}{3}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Constructor \& Destructor Documentation}{4}{subsection.2.1.2}
+\contentsline {subsubsection}{\numberline {2.1.2.1}Adjoint}{4}{subsubsection.2.1.2.1}
+\contentsline {subsubsection}{\numberline {2.1.2.2}Adjoint}{4}{subsubsection.2.1.2.2}
+\contentsline {subsection}{\numberline {2.1.3}Member Function Documentation}{4}{subsection.2.1.3}
+\contentsline {subsubsection}{\numberline {2.1.3.1}at}{4}{subsubsection.2.1.3.1}
+\contentsline {subsubsection}{\numberline {2.1.3.2}operator$\ast $}{4}{subsubsection.2.1.3.2}
+\contentsline {subsubsection}{\numberline {2.1.3.3}operator$\ast $}{4}{subsubsection.2.1.3.3}
+\contentsline {section}{\numberline {2.2}screws\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:Homogeneous\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Transform$<$ Num\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Type $>$ Class Template Reference}{5}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Detailed Description}{6}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Constructor \& Destructor Documentation}{6}{subsection.2.2.2}
+\contentsline {subsubsection}{\numberline {2.2.2.1}Homogeneous\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Transform}{6}{subsubsection.2.2.2.1}
+\contentsline {subsection}{\numberline {2.2.3}Member Function Documentation}{6}{subsection.2.2.3}
+\contentsline {subsubsection}{\numberline {2.2.3.1}approx\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Eq}{6}{subsubsection.2.2.3.1}
+\contentsline {subsubsection}{\numberline {2.2.3.2}inv}{6}{subsubsection.2.2.3.2}
+\contentsline {subsubsection}{\numberline {2.2.3.3}log}{7}{subsubsection.2.2.3.3}
+\contentsline {subsubsection}{\numberline {2.2.3.4}operator"!=}{7}{subsubsection.2.2.3.4}
+\contentsline {subsubsection}{\numberline {2.2.3.5}operator()}{7}{subsubsection.2.2.3.5}
+\contentsline {subsubsection}{\numberline {2.2.3.6}operator$\ast $}{7}{subsubsection.2.2.3.6}
+\contentsline {subsubsection}{\numberline {2.2.3.7}operator$\ast $}{7}{subsubsection.2.2.3.7}
+\contentsline {subsubsection}{\numberline {2.2.3.8}operator$\ast $=}{8}{subsubsection.2.2.3.8}
+\contentsline {subsubsection}{\numberline {2.2.3.9}operator==}{8}{subsubsection.2.2.3.9}
+\contentsline {subsubsection}{\numberline {2.2.3.10}rotation}{8}{subsubsection.2.2.3.10}
+\contentsline {subsubsection}{\numberline {2.2.3.11}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Rotation}{8}{subsubsection.2.2.3.11}
+\contentsline {subsubsection}{\numberline {2.2.3.12}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Translation}{8}{subsubsection.2.2.3.12}
+\contentsline {subsubsection}{\numberline {2.2.3.13}translation}{8}{subsubsection.2.2.3.13}
+\contentsline {subsubsection}{\numberline {2.2.3.14}twist}{9}{subsubsection.2.2.3.14}
+\contentsline {section}{\numberline {2.3}screws\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:Rotation$<$ Num\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Type $>$ Class Template Reference}{9}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Detailed Description}{10}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Constructor \& Destructor Documentation}{10}{subsection.2.3.2}
+\contentsline {subsubsection}{\numberline {2.3.2.1}Rotation}{10}{subsubsection.2.3.2.1}
+\contentsline {subsubsection}{\numberline {2.3.2.2}Rotation}{11}{subsubsection.2.3.2.2}
+\contentsline {subsubsection}{\numberline {2.3.2.3}Rotation}{11}{subsubsection.2.3.2.3}
+\contentsline {subsubsection}{\numberline {2.3.2.4}Rotation}{11}{subsubsection.2.3.2.4}
+\contentsline {subsection}{\numberline {2.3.3}Member Function Documentation}{11}{subsection.2.3.3}
+\contentsline {subsubsection}{\numberline {2.3.3.1}angle}{11}{subsubsection.2.3.3.1}
+\contentsline {subsubsection}{\numberline {2.3.3.2}approx\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Eq}{12}{subsubsection.2.3.3.2}
+\contentsline {subsubsection}{\numberline {2.3.3.3}axis}{13}{subsubsection.2.3.3.3}
+\contentsline {subsubsection}{\numberline {2.3.3.4}inv}{13}{subsubsection.2.3.3.4}
+\contentsline {subsubsection}{\numberline {2.3.3.5}log}{13}{subsubsection.2.3.3.5}
+\contentsline {subsubsection}{\numberline {2.3.3.6}operator"!=}{13}{subsubsection.2.3.3.6}
+\contentsline {subsubsection}{\numberline {2.3.3.7}operator()}{13}{subsubsection.2.3.3.7}
+\contentsline {subsubsection}{\numberline {2.3.3.8}operator==}{14}{subsubsection.2.3.3.8}
+\contentsline {subsubsection}{\numberline {2.3.3.9}rpy}{14}{subsubsection.2.3.3.9}
+\contentsline {subsubsection}{\numberline {2.3.3.10}skew}{14}{subsubsection.2.3.3.10}
+\contentsline {section}{\numberline {2.4}screws\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:Screw\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Exception Class Reference}{14}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Detailed Description}{14}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Constructor \& Destructor Documentation}{15}{subsection.2.4.2}
+\contentsline {subsubsection}{\numberline {2.4.2.1}Screw\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Exception}{15}{subsubsection.2.4.2.1}
+\contentsline {subsection}{\numberline {2.4.3}Member Function Documentation}{16}{subsection.2.4.3}
+\contentsline {subsubsection}{\numberline {2.4.3.1}what}{16}{subsubsection.2.4.3.1}
+\contentsline {section}{\numberline {2.5}screws\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:Skew$<$ Num\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Type $>$ Class Template Reference}{16}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Detailed Description}{17}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2}Constructor \& Destructor Documentation}{18}{subsection.2.5.2}
+\contentsline {subsubsection}{\numberline {2.5.2.1}Skew}{18}{subsubsection.2.5.2.1}
+\contentsline {subsubsection}{\numberline {2.5.2.2}Skew}{19}{subsubsection.2.5.2.2}
+\contentsline {subsection}{\numberline {2.5.3}Member Function Documentation}{19}{subsection.2.5.3}
+\contentsline {subsubsection}{\numberline {2.5.3.1}angle}{19}{subsubsection.2.5.3.1}
+\contentsline {subsubsection}{\numberline {2.5.3.2}approx\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Eq}{19}{subsubsection.2.5.3.2}
+\contentsline {subsubsection}{\numberline {2.5.3.3}axis}{19}{subsubsection.2.5.3.3}
+\contentsline {subsubsection}{\numberline {2.5.3.4}coordinates}{19}{subsubsection.2.5.3.4}
+\contentsline {subsubsection}{\numberline {2.5.3.5}exp}{19}{subsubsection.2.5.3.5}
+\contentsline {subsubsection}{\numberline {2.5.3.6}is\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Valid}{20}{subsubsection.2.5.3.6}
+\contentsline {subsubsection}{\numberline {2.5.3.7}norm}{20}{subsubsection.2.5.3.7}
+\contentsline {subsubsection}{\numberline {2.5.3.8}normalised}{20}{subsubsection.2.5.3.8}
+\contentsline {subsubsection}{\numberline {2.5.3.9}operator"!=}{20}{subsubsection.2.5.3.9}
+\contentsline {subsubsection}{\numberline {2.5.3.10}operator()}{20}{subsubsection.2.5.3.10}
+\contentsline {subsubsection}{\numberline {2.5.3.11}operator$\ast $}{21}{subsubsection.2.5.3.11}
+\contentsline {subsubsection}{\numberline {2.5.3.12}operator$\ast $=}{21}{subsubsection.2.5.3.12}
+\contentsline {subsubsection}{\numberline {2.5.3.13}operator+}{21}{subsubsection.2.5.3.13}
+\contentsline {subsubsection}{\numberline {2.5.3.14}operator+=}{21}{subsubsection.2.5.3.14}
+\contentsline {subsubsection}{\numberline {2.5.3.15}operator==}{21}{subsubsection.2.5.3.15}
+\contentsline {subsubsection}{\numberline {2.5.3.16}transpose}{21}{subsubsection.2.5.3.16}
+\contentsline {section}{\numberline {2.6}screws\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:Translation$<$ Num\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Type $>$ Class Template Reference}{22}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}Detailed Description}{23}{subsection.2.6.1}
+\contentsline {subsection}{\numberline {2.6.2}Constructor \& Destructor Documentation}{24}{subsection.2.6.2}
+\contentsline {subsubsection}{\numberline {2.6.2.1}Translation}{24}{subsubsection.2.6.2.1}
+\contentsline {subsection}{\numberline {2.6.3}Member Function Documentation}{25}{subsection.2.6.3}
+\contentsline {subsubsection}{\numberline {2.6.3.1}approx\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Eq}{25}{subsubsection.2.6.3.1}
+\contentsline {subsubsection}{\numberline {2.6.3.2}cross}{25}{subsubsection.2.6.3.2}
+\contentsline {subsubsection}{\numberline {2.6.3.3}dot}{25}{subsubsection.2.6.3.3}
+\contentsline {subsubsection}{\numberline {2.6.3.4}norm}{25}{subsubsection.2.6.3.4}
+\contentsline {subsubsection}{\numberline {2.6.3.5}normalised}{25}{subsubsection.2.6.3.5}
+\contentsline {subsubsection}{\numberline {2.6.3.6}operator"!=}{26}{subsubsection.2.6.3.6}
+\contentsline {subsubsection}{\numberline {2.6.3.7}operator()}{26}{subsubsection.2.6.3.7}
+\contentsline {subsubsection}{\numberline {2.6.3.8}operator=}{26}{subsubsection.2.6.3.8}
+\contentsline {subsubsection}{\numberline {2.6.3.9}operator==}{26}{subsubsection.2.6.3.9}
+\contentsline {section}{\numberline {2.7}screws\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:Twist$<$ Num\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Type $>$ Class Template Reference}{26}{section.2.7}
+\contentsline {subsection}{\numberline {2.7.1}Detailed Description}{28}{subsection.2.7.1}
+\contentsline {subsection}{\numberline {2.7.2}Constructor \& Destructor Documentation}{28}{subsection.2.7.2}
+\contentsline {subsubsection}{\numberline {2.7.2.1}Twist}{28}{subsubsection.2.7.2.1}
+\contentsline {subsubsection}{\numberline {2.7.2.2}Twist}{28}{subsubsection.2.7.2.2}
+\contentsline {subsubsection}{\numberline {2.7.2.3}Twist}{28}{subsubsection.2.7.2.3}
+\contentsline {subsection}{\numberline {2.7.3}Member Function Documentation}{28}{subsection.2.7.3}
+\contentsline {subsubsection}{\numberline {2.7.3.1}approx\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Eq}{28}{subsubsection.2.7.3.1}
+\contentsline {subsubsection}{\numberline {2.7.3.2}axis}{29}{subsubsection.2.7.3.2}
+\contentsline {subsubsection}{\numberline {2.7.3.3}coordinates}{29}{subsubsection.2.7.3.3}
+\contentsline {subsubsection}{\numberline {2.7.3.4}exp}{29}{subsubsection.2.7.3.4}
+\contentsline {subsubsection}{\numberline {2.7.3.5}norm}{29}{subsubsection.2.7.3.5}
+\contentsline {subsubsection}{\numberline {2.7.3.6}operator"!=}{29}{subsubsection.2.7.3.6}
+\contentsline {subsubsection}{\numberline {2.7.3.7}operator()}{30}{subsubsection.2.7.3.7}
+\contentsline {subsubsection}{\numberline {2.7.3.8}operator+}{31}{subsubsection.2.7.3.8}
+\contentsline {subsubsection}{\numberline {2.7.3.9}operator+=}{31}{subsubsection.2.7.3.9}
+\contentsline {subsubsection}{\numberline {2.7.3.10}operator==}{31}{subsubsection.2.7.3.10}
+\contentsline {subsubsection}{\numberline {2.7.3.11}pitch}{31}{subsubsection.2.7.3.11}
+\contentsline {subsubsection}{\numberline {2.7.3.12}skew}{31}{subsubsection.2.7.3.12}
+\contentsline {subsubsection}{\numberline {2.7.3.13}velocity}{32}{subsubsection.2.7.3.13}
+\contentsline {section}{\numberline {2.8}screws\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:Vector6$<$ Num\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Type $>$ Class Template Reference}{32}{section.2.8}
+\contentsline {subsection}{\numberline {2.8.1}Detailed Description}{33}{subsection.2.8.1}
+\contentsline {subsection}{\numberline {2.8.2}Constructor \& Destructor Documentation}{34}{subsection.2.8.2}
+\contentsline {subsubsection}{\numberline {2.8.2.1}Vector6}{34}{subsubsection.2.8.2.1}
+\contentsline {subsubsection}{\numberline {2.8.2.2}Vector6}{34}{subsubsection.2.8.2.2}
+\contentsline {subsection}{\numberline {2.8.3}Member Function Documentation}{34}{subsection.2.8.3}
+\contentsline {subsubsection}{\numberline {2.8.3.1}approx\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Eq}{34}{subsubsection.2.8.3.1}
+\contentsline {subsubsection}{\numberline {2.8.3.2}dot}{34}{subsubsection.2.8.3.2}
+\contentsline {subsubsection}{\numberline {2.8.3.3}norm}{34}{subsubsection.2.8.3.3}
+\contentsline {subsubsection}{\numberline {2.8.3.4}normalised}{34}{subsubsection.2.8.3.4}
+\contentsline {subsubsection}{\numberline {2.8.3.5}operator"!=}{35}{subsubsection.2.8.3.5}
+\contentsline {subsubsection}{\numberline {2.8.3.6}operator()}{35}{subsubsection.2.8.3.6}
+\contentsline {subsubsection}{\numberline {2.8.3.7}operator=}{35}{subsubsection.2.8.3.7}
+\contentsline {subsubsection}{\numberline {2.8.3.8}operator==}{35}{subsubsection.2.8.3.8}
+\contentsline {chapter}{Index}{36}{section*.31}

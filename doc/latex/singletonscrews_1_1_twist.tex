@@ -1,0 +1,364 @@
+\hypertarget{singletonscrews_1_1_twist}{\section{screws\+:\+:Twist$<$ Num\+Type $>$ Class Template Reference}
+\label{singletonscrews_1_1_twist}\index{screws\+::\+Twist$<$ Num\+Type $>$@{screws\+::\+Twist$<$ Num\+Type $>$}}
+}
+
+
+Implements a 4x4 twist matrix with basic functionality such as exponents, logs etc.  
+
+
+
+
+{\ttfamily \#include $<$twist.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{singletonscrews_1_1_twist_a7118e956ac794dffba45d6092f6d7996}{\hyperlink{singletonscrews_1_1_twist_a7118e956ac794dffba45d6092f6d7996}{Twist} ()}\label{singletonscrews_1_1_twist_a7118e956ac794dffba45d6092f6d7996}
+
+\begin{DoxyCompactList}\small\item\em Initialise with zeros. This corresponds to the identity homogeneous transformation matrix. \end{DoxyCompactList}\item 
+\hyperlink{singletonscrews_1_1_twist_a44e612e3a701624c465613e5ec4554e4}{Twist} (const \hyperlink{classscrews_1_1_homogeneous_transform}{Homogeneous\+Transform}$<$ Num\+Type $>$ \&H\+T)
+\begin{DoxyCompactList}\small\item\em Create a twist by taking the logarithm of a homogeneous transformation matrix. \end{DoxyCompactList}\item 
+\hyperlink{singletonscrews_1_1_twist_a1f20769c6812d4d8642499beab0ea9dd}{Twist} (const \hyperlink{singletonscrews_1_1_vector6}{Twist\+Coordinates}$<$ Num\+Type $>$ \&V)
+\begin{DoxyCompactList}\small\item\em Create a twist using a twistcoordinates vector. \end{DoxyCompactList}\item 
+\hyperlink{singletonscrews_1_1_twist_ab10fbc50e3313713ea91090baec58069}{Twist} (const Num\+Type \&t0, const Num\+Type \&t1, const Num\+Type \&t2, const Num\+Type \&t3, const Num\+Type \&t4, const Num\+Type \&t5)
+\begin{DoxyCompactList}\small\item\em Create a twist using the 6 twist coordinates. \end{DoxyCompactList}\item 
+\hypertarget{singletonscrews_1_1_twist_a3cf2b76b6a3b561f01f5050c430755c3}{\hyperlink{singletonscrews_1_1_twist_a3cf2b76b6a3b561f01f5050c430755c3}{$\sim$\+Twist} ()}\label{singletonscrews_1_1_twist_a3cf2b76b6a3b561f01f5050c430755c3}
+
+\begin{DoxyCompactList}\small\item\em Default destructor. \end{DoxyCompactList}\item 
+Num\+Type \hyperlink{singletonscrews_1_1_twist_ac7983ec6acc61283dcb361c39749e83c}{pitch} () const 
+\begin{DoxyCompactList}\small\item\em Calculate and return the pitch of the twist. \end{DoxyCompactList}\item 
+\hyperlink{singletonscrews_1_1_vector6}{Twist\+Coordinates}$<$ Num\+Type $>$ \hyperlink{singletonscrews_1_1_twist_afd7bd1a3b654dbb8411195ced209c5f0}{axis} () const 
+\begin{DoxyCompactList}\small\item\em Calculate and return the axis of the twist. \end{DoxyCompactList}\item 
+\hyperlink{singletonscrews_1_1_vector6}{Twist\+Coordinates}$<$ Num\+Type $>$ \hyperlink{singletonscrews_1_1_twist_a23049d6d5757c3d79d6e0b46ab09bcb9}{coordinates} () const 
+\begin{DoxyCompactList}\small\item\em Calculate and return the 6x1 twist coordinates. \end{DoxyCompactList}\item 
+Num\+Type \hyperlink{singletonscrews_1_1_twist_ad94400fd342b1945bde5ea1d3babe59f}{norm} () const 
+\begin{DoxyCompactList}\small\item\em Calculate and return the norm of the twist. \end{DoxyCompactList}\item 
+\hyperlink{classscrews_1_1_homogeneous_transform}{Homogeneous\+Transform}$<$ Num\+Type $>$ \hyperlink{singletonscrews_1_1_twist_a19f92b83f476ad9a0c2bf69fe70a0fc7}{exp} (const Num\+Type \&theta=(Num\+Type) 1) const 
+\begin{DoxyCompactList}\small\item\em Create a homogeneous transformation matrix by taking the exponential of the twist. \end{DoxyCompactList}\item 
+\hypertarget{singletonscrews_1_1_twist_adc46cc120386e2f40aa2d4181d4d2dd0}{bool \hyperlink{singletonscrews_1_1_twist_adc46cc120386e2f40aa2d4181d4d2dd0}{is\+Valid} () const }\label{singletonscrews_1_1_twist_adc46cc120386e2f40aa2d4181d4d2dd0}
+
+\begin{DoxyCompactList}\small\item\em Perform verification that matrix is indeed in approriate format by checking the \hyperlink{singletonscrews_1_1_skew}{Skew} component. \end{DoxyCompactList}\item 
+\hyperlink{singletonscrews_1_1_skew}{Skew}$<$ Num\+Type $>$ \hyperlink{singletonscrews_1_1_twist_aef12b31f543a87beb9a0b30b0e33cf4f}{skew} () const 
+\begin{DoxyCompactList}\small\item\em Returns the skew symmetric (rotation) part of the twist. \end{DoxyCompactList}\item 
+\hyperlink{singletonscrews_1_1_translation}{Translation}$<$ Num\+Type $>$ \hyperlink{singletonscrews_1_1_twist_aff8bab103ef45feabb606b45b489406f}{velocity} () const 
+\begin{DoxyCompactList}\small\item\em Returns the velocity part of the twist. \end{DoxyCompactList}\item 
+\hyperlink{singletonscrews_1_1_twist}{Twist}$<$ Num\+Type $>$ \hyperlink{singletonscrews_1_1_twist_a18135225dcc8dd0a684cc3e13c603632}{operator+} (const \hyperlink{singletonscrews_1_1_twist}{Twist}$<$ Num\+Type $>$ \&T) const 
+\begin{DoxyCompactList}\small\item\em Element-\/by-\/element addition of twist matrices. \end{DoxyCompactList}\item 
+const \hyperlink{singletonscrews_1_1_twist}{Twist}$<$ Num\+Type $>$ \& \hyperlink{singletonscrews_1_1_twist_a69a02d5931b08a33b3f9403c14e9b875}{operator+=} (const \hyperlink{singletonscrews_1_1_twist}{Twist}$<$ Num\+Type $>$ \&T)
+\begin{DoxyCompactList}\small\item\em Element-\/by-\/element in-\/place addition of skew matrices. \end{DoxyCompactList}\item 
+bool \hyperlink{singletonscrews_1_1_twist_a0294f006eef3e1bf81873b6b23a726d2}{operator==} (const \hyperlink{singletonscrews_1_1_twist}{Twist}$<$ Num\+Type $>$ \&T) const 
+\begin{DoxyCompactList}\small\item\em Element-\/by-\/element exact equality operator. \end{DoxyCompactList}\item 
+bool \hyperlink{singletonscrews_1_1_twist_a08fcff2ea99ebc2c55df1ce70d51647e}{operator!=} (const \hyperlink{singletonscrews_1_1_twist}{Twist}$<$ Num\+Type $>$ \&T) const 
+\begin{DoxyCompactList}\small\item\em Inequality operator. \end{DoxyCompactList}\item 
+bool \hyperlink{singletonscrews_1_1_twist_ae7415c662005a6616f98ca2389e5beb0}{approx\+Eq} (const \hyperlink{singletonscrews_1_1_twist}{Twist}$<$ Num\+Type $>$ \&T, double eps=F\+L\+T\+\_\+\+E\+P\+S\+I\+L\+O\+N) const 
+\begin{DoxyCompactList}\small\item\em Approximal equality operator, within a given epsilon or system precision. \end{DoxyCompactList}\item 
+const Num\+Type \& \hyperlink{singletonscrews_1_1_twist_ac5e9f16ced07c5cd03338b4f6a3ec788}{operator()} (const unsigned int \&i, const unsigned int \&j) const 
+\begin{DoxyCompactList}\small\item\em Return the requested element (read). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{singletonscrews_1_1_twist_a71eb764b1eb5702635b864410a15e01f}{void {\bfseries reset\+Data} ()}\label{singletonscrews_1_1_twist_a71eb764b1eb5702635b864410a15e01f}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{singletonscrews_1_1_twist_a7e0d1d4d4e1dbb2ad2b247f17b70d9ec}{\hyperlink{singletonscrews_1_1_skew}{Skew}$<$ Num\+Type $>$ {\bfseries \+\_\+skew}}\label{singletonscrews_1_1_twist_a7e0d1d4d4e1dbb2ad2b247f17b70d9ec}
+
+\item 
+\hypertarget{singletonscrews_1_1_twist_afaadf2123fb3dfe8594f9cd11a10edf4}{\hyperlink{singletonscrews_1_1_translation}{Translation}$<$ Num\+Type $>$ {\bfseries \+\_\+velocity}}\label{singletonscrews_1_1_twist_afaadf2123fb3dfe8594f9cd11a10edf4}
+
+\item 
+\hypertarget{singletonscrews_1_1_twist_a0d89a01bdaf6e7e6fbc04edaed4e115a}{Num\+Type {\bfseries \+\_\+zero\+Val}}\label{singletonscrews_1_1_twist_a0d89a01bdaf6e7e6fbc04edaed4e115a}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{singletonscrews_1_1_twist_a64349d960cc83b80013641015f37b1a8}{{\footnotesize template$<$class Num\+Type\+Homo $>$ }\\class {\bfseries Homogeneous\+Transform}}\label{singletonscrews_1_1_twist_a64349d960cc83b80013641015f37b1a8}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Num\+Type$>$class screws\+::\+Twist$<$ Num\+Type $>$}
+
+Implements a 4x4 twist matrix with basic functionality such as exponents, logs etc. 
+
+\begin{DoxyNote}{Note}
+Author\+: Christos Bergeles 
+\end{DoxyNote}
+\begin{DoxyDate}{Date}
+8th May 2015 
+\end{DoxyDate}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{singletonscrews_1_1_twist_a44e612e3a701624c465613e5ec4554e4}{\index{screws\+::\+Twist@{screws\+::\+Twist}!Twist@{Twist}}
+\index{Twist@{Twist}!screws\+::\+Twist@{screws\+::\+Twist}}
+\subsubsection[{Twist}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Num\+Type$>$ {\bf screws\+::\+Twist}$<$ Num\+Type $>$\+::{\bf Twist} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Homogeneous\+Transform}$<$ Num\+Type $>$ \&}]{H\+T}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{singletonscrews_1_1_twist_a44e612e3a701624c465613e5ec4554e4}
+
+
+Create a twist by taking the logarithm of a homogeneous transformation matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em H\+T} & a homogeneous transformation matrix. \\
+\hline
+\end{DoxyParams}
+\hypertarget{singletonscrews_1_1_twist_a1f20769c6812d4d8642499beab0ea9dd}{\index{screws\+::\+Twist@{screws\+::\+Twist}!Twist@{Twist}}
+\index{Twist@{Twist}!screws\+::\+Twist@{screws\+::\+Twist}}
+\subsubsection[{Twist}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Num\+Type$>$ {\bf screws\+::\+Twist}$<$ Num\+Type $>$\+::{\bf Twist} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Twist\+Coordinates}$<$ Num\+Type $>$ \&}]{V}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{singletonscrews_1_1_twist_a1f20769c6812d4d8642499beab0ea9dd}
+
+
+Create a twist using a twistcoordinates vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em V} & the twist coordinates. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+V(0)-\/\+V(2) correspond to the velocity, and V(3)-\/\+V(5) to the rotation. 
+\end{DoxyNote}
+\hypertarget{singletonscrews_1_1_twist_ab10fbc50e3313713ea91090baec58069}{\index{screws\+::\+Twist@{screws\+::\+Twist}!Twist@{Twist}}
+\index{Twist@{Twist}!screws\+::\+Twist@{screws\+::\+Twist}}
+\subsubsection[{Twist}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Num\+Type$>$ {\bf screws\+::\+Twist}$<$ Num\+Type $>$\+::{\bf Twist} (
+\begin{DoxyParamCaption}
+\item[{const Num\+Type \&}]{t0, }
+\item[{const Num\+Type \&}]{t1, }
+\item[{const Num\+Type \&}]{t2, }
+\item[{const Num\+Type \&}]{t3, }
+\item[{const Num\+Type \&}]{t4, }
+\item[{const Num\+Type \&}]{t5}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{singletonscrews_1_1_twist_ab10fbc50e3313713ea91090baec58069}
+
+
+Create a twist using the 6 twist coordinates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t0-\/t6} & the twist coordinates. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{singletonscrews_1_1_twist_ae7415c662005a6616f98ca2389e5beb0}{\index{screws\+::\+Twist@{screws\+::\+Twist}!approx\+Eq@{approx\+Eq}}
+\index{approx\+Eq@{approx\+Eq}!screws\+::\+Twist@{screws\+::\+Twist}}
+\subsubsection[{approx\+Eq}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Num\+Type$>$ bool {\bf screws\+::\+Twist}$<$ Num\+Type $>$\+::approx\+Eq (
+\begin{DoxyParamCaption}
+\item[{const {\bf Twist}$<$ Num\+Type $>$ \&}]{T, }
+\item[{double}]{eps = {\ttfamily FLT\+\_\+EPSILON}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{singletonscrews_1_1_twist_ae7415c662005a6616f98ca2389e5beb0}
+
+
+Approximal equality operator, within a given epsilon or system precision. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em T} & compared twist matrix. \\
+\hline
+{\em eps} & desired precision \mbox{[}default\+: machine precision\mbox{]}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{singletonscrews_1_1_twist_afd7bd1a3b654dbb8411195ced209c5f0}{\index{screws\+::\+Twist@{screws\+::\+Twist}!axis@{axis}}
+\index{axis@{axis}!screws\+::\+Twist@{screws\+::\+Twist}}
+\subsubsection[{axis}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Num\+Type$>$ {\bf Twist\+Coordinates}$<$Num\+Type$>$ {\bf screws\+::\+Twist}$<$ Num\+Type $>$\+::axis (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{singletonscrews_1_1_twist_afd7bd1a3b654dbb8411195ced209c5f0}
+
+
+Calculate and return the axis of the twist. 
+
+\begin{DoxyReturn}{Returns}
+a Twist\+Coordinates vector w containing the axis of the twist, with w(0\+:2) + $\ast$w(3\+:5), \{R\}. 
+\end{DoxyReturn}
+\hypertarget{singletonscrews_1_1_twist_a23049d6d5757c3d79d6e0b46ab09bcb9}{\index{screws\+::\+Twist@{screws\+::\+Twist}!coordinates@{coordinates}}
+\index{coordinates@{coordinates}!screws\+::\+Twist@{screws\+::\+Twist}}
+\subsubsection[{coordinates}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Num\+Type$>$ {\bf Twist\+Coordinates}$<$Num\+Type$>$ {\bf screws\+::\+Twist}$<$ Num\+Type $>$\+::coordinates (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{singletonscrews_1_1_twist_a23049d6d5757c3d79d6e0b46ab09bcb9}
+
+
+Calculate and return the 6x1 twist coordinates. 
+
+\begin{DoxyReturn}{Returns}
+the Twist\+Coordinates vector. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+V(0)-\/\+V(2) contain the velocity of the twist, and V(3)-\/\+V(5) the rotation. 
+\end{DoxyNote}
+\hypertarget{singletonscrews_1_1_twist_a19f92b83f476ad9a0c2bf69fe70a0fc7}{\index{screws\+::\+Twist@{screws\+::\+Twist}!exp@{exp}}
+\index{exp@{exp}!screws\+::\+Twist@{screws\+::\+Twist}}
+\subsubsection[{exp}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Num\+Type$>$ {\bf Homogeneous\+Transform}$<$Num\+Type$>$ {\bf screws\+::\+Twist}$<$ Num\+Type $>$\+::exp (
+\begin{DoxyParamCaption}
+\item[{const Num\+Type \&}]{theta = {\ttfamily (NumType)1}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{singletonscrews_1_1_twist_a19f92b83f476ad9a0c2bf69fe70a0fc7}
+
+
+Create a homogeneous transformation matrix by taking the exponential of the twist. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em theta} & the magnitude of the rotation. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the homogeneous transformation matrix. 
+\end{DoxyReturn}
+\hypertarget{singletonscrews_1_1_twist_ad94400fd342b1945bde5ea1d3babe59f}{\index{screws\+::\+Twist@{screws\+::\+Twist}!norm@{norm}}
+\index{norm@{norm}!screws\+::\+Twist@{screws\+::\+Twist}}
+\subsubsection[{norm}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Num\+Type$>$ Num\+Type {\bf screws\+::\+Twist}$<$ Num\+Type $>$\+::norm (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{singletonscrews_1_1_twist_ad94400fd342b1945bde5ea1d3babe59f}
+
+
+Calculate and return the norm of the twist. 
+
+\begin{DoxyReturn}{Returns}
+the norm of the twist. 
+\end{DoxyReturn}
+\hypertarget{singletonscrews_1_1_twist_a08fcff2ea99ebc2c55df1ce70d51647e}{\index{screws\+::\+Twist@{screws\+::\+Twist}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!screws\+::\+Twist@{screws\+::\+Twist}}
+\subsubsection[{operator"!=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Num\+Type$>$ bool {\bf screws\+::\+Twist}$<$ Num\+Type $>$\+::operator!= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Twist}$<$ Num\+Type $>$ \&}]{T}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{singletonscrews_1_1_twist_a08fcff2ea99ebc2c55df1ce70d51647e}
+
+
+Inequality operator. 
+
+\begin{DoxyReturn}{Returns}
+true if one of the element-\/by-\/element comparisons return true. Otherwise, false. 
+\end{DoxyReturn}
+\hypertarget{singletonscrews_1_1_twist_ac5e9f16ced07c5cd03338b4f6a3ec788}{\index{screws\+::\+Twist@{screws\+::\+Twist}!operator()@{operator()}}
+\index{operator()@{operator()}!screws\+::\+Twist@{screws\+::\+Twist}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Num\+Type$>$ const Num\+Type\& {\bf screws\+::\+Twist}$<$ Num\+Type $>$\+::operator() (
+\begin{DoxyParamCaption}
+\item[{const unsigned int \&}]{i, }
+\item[{const unsigned int \&}]{j}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{singletonscrews_1_1_twist_ac5e9f16ced07c5cd03338b4f6a3ec788}
+
+
+Return the requested element (read). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & the index of the row. \\
+\hline
+{\em j} & the index of the column. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+No boundary check is performed. 
+\end{DoxyNote}
+\hypertarget{singletonscrews_1_1_twist_a18135225dcc8dd0a684cc3e13c603632}{\index{screws\+::\+Twist@{screws\+::\+Twist}!operator+@{operator+}}
+\index{operator+@{operator+}!screws\+::\+Twist@{screws\+::\+Twist}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Num\+Type$>$ {\bf Twist}$<$Num\+Type$>$ {\bf screws\+::\+Twist}$<$ Num\+Type $>$\+::operator+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Twist}$<$ Num\+Type $>$ \&}]{T}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{singletonscrews_1_1_twist_a18135225dcc8dd0a684cc3e13c603632}
+
+
+Element-\/by-\/element addition of twist matrices. 
+
+\begin{DoxyNote}{Note}
+This operation corresponds to multiplication of the respective homogeneous transforms. 
+\end{DoxyNote}
+\hypertarget{singletonscrews_1_1_twist_a69a02d5931b08a33b3f9403c14e9b875}{\index{screws\+::\+Twist@{screws\+::\+Twist}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!screws\+::\+Twist@{screws\+::\+Twist}}
+\subsubsection[{operator+=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Num\+Type$>$ const {\bf Twist}$<$Num\+Type$>$\& {\bf screws\+::\+Twist}$<$ Num\+Type $>$\+::operator+= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Twist}$<$ Num\+Type $>$ \&}]{T}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{singletonscrews_1_1_twist_a69a02d5931b08a33b3f9403c14e9b875}
+
+
+Element-\/by-\/element in-\/place addition of skew matrices. 
+
+\begin{DoxyNote}{Note}
+This operation corresponds to multiplication of the respective rotations. 
+\end{DoxyNote}
+\hypertarget{singletonscrews_1_1_twist_a0294f006eef3e1bf81873b6b23a726d2}{\index{screws\+::\+Twist@{screws\+::\+Twist}!operator==@{operator==}}
+\index{operator==@{operator==}!screws\+::\+Twist@{screws\+::\+Twist}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Num\+Type$>$ bool {\bf screws\+::\+Twist}$<$ Num\+Type $>$\+::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf Twist}$<$ Num\+Type $>$ \&}]{T}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{singletonscrews_1_1_twist_a0294f006eef3e1bf81873b6b23a726d2}
+
+
+Element-\/by-\/element exact equality operator. 
+
+\begin{DoxyReturn}{Returns}
+true if all elements are exactly equal 
+\end{DoxyReturn}
+\hypertarget{singletonscrews_1_1_twist_ac7983ec6acc61283dcb361c39749e83c}{\index{screws\+::\+Twist@{screws\+::\+Twist}!pitch@{pitch}}
+\index{pitch@{pitch}!screws\+::\+Twist@{screws\+::\+Twist}}
+\subsubsection[{pitch}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Num\+Type$>$ Num\+Type {\bf screws\+::\+Twist}$<$ Num\+Type $>$\+::pitch (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{singletonscrews_1_1_twist_ac7983ec6acc61283dcb361c39749e83c}
+
+
+Calculate and return the pitch of the twist. 
+
+\begin{DoxyReturn}{Returns}
+the pitch of the twist. 
+\end{DoxyReturn}
+\hypertarget{singletonscrews_1_1_twist_aef12b31f543a87beb9a0b30b0e33cf4f}{\index{screws\+::\+Twist@{screws\+::\+Twist}!skew@{skew}}
+\index{skew@{skew}!screws\+::\+Twist@{screws\+::\+Twist}}
+\subsubsection[{skew}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Num\+Type$>$ {\bf Skew}$<$Num\+Type$>$ {\bf screws\+::\+Twist}$<$ Num\+Type $>$\+::skew (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{singletonscrews_1_1_twist_aef12b31f543a87beb9a0b30b0e33cf4f}
+
+
+Returns the skew symmetric (rotation) part of the twist. 
+
+\begin{DoxyReturn}{Returns}
+the skew symmetric part of the twist. 
+\end{DoxyReturn}
+\hypertarget{singletonscrews_1_1_twist_aff8bab103ef45feabb606b45b489406f}{\index{screws\+::\+Twist@{screws\+::\+Twist}!velocity@{velocity}}
+\index{velocity@{velocity}!screws\+::\+Twist@{screws\+::\+Twist}}
+\subsubsection[{velocity}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Num\+Type$>$ {\bf Translation}$<$Num\+Type$>$ {\bf screws\+::\+Twist}$<$ Num\+Type $>$\+::velocity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{singletonscrews_1_1_twist_aff8bab103ef45feabb606b45b489406f}
+
+
+Returns the velocity part of the twist. 
+
+\begin{DoxyReturn}{Returns}
+the velocity (3x1 vector) part of the twist. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/cbergeles/\+Dropbox/prj/mevislab/\+Custom\+Libraries/\+General/\+Sources/\+Shared/\+Screws/homogeneous\+Transform.\+hpp\item 
+/\+Users/cbergeles/\+Dropbox/prj/mevislab/\+Custom\+Libraries/\+General/\+Sources/\+Shared/\+Screws/twist.\+hpp\end{DoxyCompactItemize}

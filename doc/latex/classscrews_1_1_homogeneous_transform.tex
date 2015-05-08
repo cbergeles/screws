@@ -1,0 +1,317 @@
+\hypertarget{classscrews_1_1_homogeneous_transform}{\section{screws\+:\+:Homogeneous\+Transform$<$ Num\+Type $>$ Class Template Reference}
+\label{classscrews_1_1_homogeneous_transform}\index{screws\+::\+Homogeneous\+Transform$<$ Num\+Type $>$@{screws\+::\+Homogeneous\+Transform$<$ Num\+Type $>$}}
+}
+
+
+Implements a 4x4 homogeneous transformation matrix along with basic operators.  
+
+
+
+
+{\ttfamily \#include $<$homogeneous\+Transform.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classscrews_1_1_homogeneous_transform_a7c02181ea9cd4ab74fa2c5cc576110fb}{\hyperlink{classscrews_1_1_homogeneous_transform_a7c02181ea9cd4ab74fa2c5cc576110fb}{Homogeneous\+Transform} ()}\label{classscrews_1_1_homogeneous_transform_a7c02181ea9cd4ab74fa2c5cc576110fb}
+
+\begin{DoxyCompactList}\small\item\em Create a default homogeneous transformation unit matrix. \end{DoxyCompactList}\item 
+\hyperlink{classscrews_1_1_homogeneous_transform_a57e7ca6d108c2a427daa6d38a14990ec}{Homogeneous\+Transform} (const \hyperlink{singletonscrews_1_1_rotation}{Rotation}$<$ Num\+Type $>$ \&R, const \hyperlink{singletonscrews_1_1_translation}{Translation}$<$ Num\+Type $>$ \&T)
+\begin{DoxyCompactList}\small\item\em Create a homogeneous transformation matrix from a rotation and a translation. \end{DoxyCompactList}\item 
+\hyperlink{singletonscrews_1_1_translation}{Translation}$<$ Num\+Type $>$ \hyperlink{classscrews_1_1_homogeneous_transform_aacc88fcb1e2f0467481706cef3325172}{translation} () const 
+\begin{DoxyCompactList}\small\item\em Return the 3x1 translation vector. \end{DoxyCompactList}\item 
+void \hyperlink{classscrews_1_1_homogeneous_transform_a777414acc4a12cb8201f1b2f079d1178}{set\+Translation} (const \hyperlink{singletonscrews_1_1_translation}{Translation}$<$ Num\+Type $>$ \&T)
+\begin{DoxyCompactList}\small\item\em Change the translation part of the homogeneous transformation matrix. \end{DoxyCompactList}\item 
+\hyperlink{singletonscrews_1_1_rotation}{Rotation}$<$ Num\+Type $>$ \hyperlink{classscrews_1_1_homogeneous_transform_a6ff95f963c60c77571321e03d845b588}{rotation} () const 
+\begin{DoxyCompactList}\small\item\em Return the rotational part of the homogeneous transformation matrix. \end{DoxyCompactList}\item 
+void \hyperlink{classscrews_1_1_homogeneous_transform_aff5a72c974f2e318172f040e47efb2dc}{set\+Rotation} (const \hyperlink{singletonscrews_1_1_rotation}{Rotation}$<$ Num\+Type $>$ \&R)
+\begin{DoxyCompactList}\small\item\em Set the rotational part of the homegeneous transformation matrix. \end{DoxyCompactList}\item 
+\hyperlink{singletonscrews_1_1_twist}{Twist}$<$ Num\+Type $>$ \hyperlink{classscrews_1_1_homogeneous_transform_a8e3d44103e1766c8f013c92297725e35}{log} () const 
+\begin{DoxyCompactList}\small\item\em Calculate the twist (log) of the homogeneous transformation matrix. \end{DoxyCompactList}\item 
+\hyperlink{singletonscrews_1_1_twist}{Twist}$<$ Num\+Type $>$ \hyperlink{classscrews_1_1_homogeneous_transform_a8dd7f05a1bf120cc927408e67deff45d}{twist} () const 
+\begin{DoxyCompactList}\small\item\em Calculate the twist (log) of the homogeneous transformation matrix. \end{DoxyCompactList}\item 
+\hyperlink{classscrews_1_1_homogeneous_transform}{Homogeneous\+Transform}$<$ Num\+Type $>$ \hyperlink{classscrews_1_1_homogeneous_transform_abaebb536e17565b5ba22f2122e2d85b6}{inv} () const 
+\begin{DoxyCompactList}\small\item\em Perform fast inversion of the homogeneous transformation matrix. \end{DoxyCompactList}\item 
+\hyperlink{classscrews_1_1_homogeneous_transform}{Homogeneous\+Transform}$<$ Num\+Type $>$ \hyperlink{classscrews_1_1_homogeneous_transform_a68cb5139adf43354a5259385f7807dff}{operator$\ast$} (const \hyperlink{classscrews_1_1_homogeneous_transform}{Homogeneous\+Transform}$<$ Num\+Type $>$ \&H)
+\begin{DoxyCompactList}\small\item\em Matrix multiplication. \end{DoxyCompactList}\item 
+const \hyperlink{classscrews_1_1_homogeneous_transform}{Homogeneous\+Transform}\\*
+$<$ Num\+Type $>$ \& \hyperlink{classscrews_1_1_homogeneous_transform_a37c5add16b4ed6a22cc730889a540026}{operator$\ast$=} (const \hyperlink{classscrews_1_1_homogeneous_transform}{Homogeneous\+Transform}$<$ Num\+Type $>$ \&H)
+\begin{DoxyCompactList}\small\item\em In-\/place matrix multiplication. \end{DoxyCompactList}\item 
+\hyperlink{singletonscrews_1_1_translation}{Translation}$<$ Num\+Type $>$ \hyperlink{classscrews_1_1_homogeneous_transform_ac8c3eba60254fe6c3783af4291de779b}{operator$\ast$} (const \hyperlink{singletonscrews_1_1_translation}{Translation}$<$ Num\+Type $>$ \&T)
+\begin{DoxyCompactList}\small\item\em Multiplication with a translation. \end{DoxyCompactList}\item 
+bool \hyperlink{classscrews_1_1_homogeneous_transform_ab39f7433963975cd067a665a2d4a87cc}{operator==} (const \hyperlink{classscrews_1_1_homogeneous_transform}{Homogeneous\+Transform} \&H)
+\begin{DoxyCompactList}\small\item\em Element-\/by-\/element exact equality operator. \end{DoxyCompactList}\item 
+bool \hyperlink{classscrews_1_1_homogeneous_transform_aacfa2c940430fa310cadba384059b139}{operator!=} (const \hyperlink{classscrews_1_1_homogeneous_transform}{Homogeneous\+Transform} \&H)
+\begin{DoxyCompactList}\small\item\em Element-\/by-\/element inequality operator. \end{DoxyCompactList}\item 
+const Num\+Type \& \hyperlink{classscrews_1_1_homogeneous_transform_aa25cb511faf386f229c5a13f15dc9d08}{operator()} (const unsigned int \&i, const unsigned int \&j) const 
+\begin{DoxyCompactList}\small\item\em Return the requested element (read). \end{DoxyCompactList}\item 
+bool \hyperlink{classscrews_1_1_homogeneous_transform_a5f9baaf6e910cbc16060645842567a7a}{approx\+Eq} (const \hyperlink{classscrews_1_1_homogeneous_transform}{Homogeneous\+Transform}$<$ Num\+Type $>$ \&H, double eps=F\+L\+T\+\_\+\+E\+P\+S\+I\+L\+O\+N)
+\begin{DoxyCompactList}\small\item\em Approximal equality operator, within a given epsilon or system precision. \end{DoxyCompactList}\item 
+\hypertarget{classscrews_1_1_homogeneous_transform_a96c48c8656f31351fbaa3f45f43a99e0}{bool \hyperlink{classscrews_1_1_homogeneous_transform_a96c48c8656f31351fbaa3f45f43a99e0}{is\+Valid} () const }\label{classscrews_1_1_homogeneous_transform_a96c48c8656f31351fbaa3f45f43a99e0}
+
+\begin{DoxyCompactList}\small\item\em Perform verification that matrix is indeed in approriate format by checking the rotational component for validity. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classscrews_1_1_homogeneous_transform_a01e1886aafbf1483da899aba3b6c58da}{{\footnotesize template$<$class Num\+Type\+Trans $>$ }\\class {\bfseries Translation}}\label{classscrews_1_1_homogeneous_transform_a01e1886aafbf1483da899aba3b6c58da}
+
+\item 
+\hypertarget{classscrews_1_1_homogeneous_transform_a71cdfb2347f288c41e58374b57613143}{{\footnotesize template$<$class Num\+Type\+Rot $>$ }\\class {\bfseries Rotation}}\label{classscrews_1_1_homogeneous_transform_a71cdfb2347f288c41e58374b57613143}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Num\+Type$>$class screws\+::\+Homogeneous\+Transform$<$ Num\+Type $>$}
+
+Implements a 4x4 homogeneous transformation matrix along with basic operators. 
+
+\begin{DoxyNote}{Note}
+Author\+: Christos Bergeles 
+\end{DoxyNote}
+\begin{DoxyDate}{Date}
+5th May 2015 
+\end{DoxyDate}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classscrews_1_1_homogeneous_transform_a57e7ca6d108c2a427daa6d38a14990ec}{\index{screws\+::\+Homogeneous\+Transform@{screws\+::\+Homogeneous\+Transform}!Homogeneous\+Transform@{Homogeneous\+Transform}}
+\index{Homogeneous\+Transform@{Homogeneous\+Transform}!screws\+::\+Homogeneous\+Transform@{screws\+::\+Homogeneous\+Transform}}
+\subsubsection[{Homogeneous\+Transform}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Num\+Type$>$ {\bf screws\+::\+Homogeneous\+Transform}$<$ Num\+Type $>$\+::{\bf Homogeneous\+Transform} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Rotation}$<$ Num\+Type $>$ \&}]{R, }
+\item[{const {\bf Translation}$<$ Num\+Type $>$ \&}]{T}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classscrews_1_1_homogeneous_transform_a57e7ca6d108c2a427daa6d38a14990ec}
+
+
+Create a homogeneous transformation matrix from a rotation and a translation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em R} & the \hyperlink{singletonscrews_1_1_rotation}{Rotation} matrix. \\
+\hline
+{\em T} & the \hyperlink{singletonscrews_1_1_translation}{Translation} vector. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classscrews_1_1_homogeneous_transform_a5f9baaf6e910cbc16060645842567a7a}{\index{screws\+::\+Homogeneous\+Transform@{screws\+::\+Homogeneous\+Transform}!approx\+Eq@{approx\+Eq}}
+\index{approx\+Eq@{approx\+Eq}!screws\+::\+Homogeneous\+Transform@{screws\+::\+Homogeneous\+Transform}}
+\subsubsection[{approx\+Eq}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Num\+Type$>$ bool {\bf screws\+::\+Homogeneous\+Transform}$<$ Num\+Type $>$\+::approx\+Eq (
+\begin{DoxyParamCaption}
+\item[{const {\bf Homogeneous\+Transform}$<$ Num\+Type $>$ \&}]{H, }
+\item[{double}]{eps = {\ttfamily FLT\+\_\+EPSILON}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classscrews_1_1_homogeneous_transform_a5f9baaf6e910cbc16060645842567a7a}
+
+
+Approximal equality operator, within a given epsilon or system precision. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em T} & compared translation. \\
+\hline
+{\em eps} & desired precision \mbox{[}default\+: machine precision\mbox{]}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classscrews_1_1_homogeneous_transform_abaebb536e17565b5ba22f2122e2d85b6}{\index{screws\+::\+Homogeneous\+Transform@{screws\+::\+Homogeneous\+Transform}!inv@{inv}}
+\index{inv@{inv}!screws\+::\+Homogeneous\+Transform@{screws\+::\+Homogeneous\+Transform}}
+\subsubsection[{inv}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Num\+Type$>$ {\bf Homogeneous\+Transform}$<$Num\+Type$>$ {\bf screws\+::\+Homogeneous\+Transform}$<$ Num\+Type $>$\+::inv (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classscrews_1_1_homogeneous_transform_abaebb536e17565b5ba22f2122e2d85b6}
+
+
+Perform fast inversion of the homogeneous transformation matrix. 
+
+\begin{DoxyReturn}{Returns}
+the inverted homogeneous transformation matrix. 
+\end{DoxyReturn}
+\hypertarget{classscrews_1_1_homogeneous_transform_a8e3d44103e1766c8f013c92297725e35}{\index{screws\+::\+Homogeneous\+Transform@{screws\+::\+Homogeneous\+Transform}!log@{log}}
+\index{log@{log}!screws\+::\+Homogeneous\+Transform@{screws\+::\+Homogeneous\+Transform}}
+\subsubsection[{log}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Num\+Type$>$ {\bf Twist}$<$Num\+Type$>$ {\bf screws\+::\+Homogeneous\+Transform}$<$ Num\+Type $>$\+::log (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classscrews_1_1_homogeneous_transform_a8e3d44103e1766c8f013c92297725e35}
+
+
+Calculate the twist (log) of the homogeneous transformation matrix. 
+
+\begin{DoxyReturn}{Returns}
+the 4x4 twist skew symmetric matrix. 
+\end{DoxyReturn}
+\hypertarget{classscrews_1_1_homogeneous_transform_aacfa2c940430fa310cadba384059b139}{\index{screws\+::\+Homogeneous\+Transform@{screws\+::\+Homogeneous\+Transform}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!screws\+::\+Homogeneous\+Transform@{screws\+::\+Homogeneous\+Transform}}
+\subsubsection[{operator"!=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Num\+Type$>$ bool {\bf screws\+::\+Homogeneous\+Transform}$<$ Num\+Type $>$\+::operator!= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Homogeneous\+Transform}$<$ Num\+Type $>$ \&}]{H}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classscrews_1_1_homogeneous_transform_aacfa2c940430fa310cadba384059b139}
+
+
+Element-\/by-\/element inequality operator. 
+
+\begin{DoxyReturn}{Returns}
+true if any of the elements are not exactly the same. 
+\end{DoxyReturn}
+\hypertarget{classscrews_1_1_homogeneous_transform_aa25cb511faf386f229c5a13f15dc9d08}{\index{screws\+::\+Homogeneous\+Transform@{screws\+::\+Homogeneous\+Transform}!operator()@{operator()}}
+\index{operator()@{operator()}!screws\+::\+Homogeneous\+Transform@{screws\+::\+Homogeneous\+Transform}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Num\+Type$>$ const Num\+Type\& {\bf screws\+::\+Homogeneous\+Transform}$<$ Num\+Type $>$\+::operator() (
+\begin{DoxyParamCaption}
+\item[{const unsigned int \&}]{i, }
+\item[{const unsigned int \&}]{j}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classscrews_1_1_homogeneous_transform_aa25cb511faf386f229c5a13f15dc9d08}
+
+
+Return the requested element (read). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & the index of the row. \\
+\hline
+{\em j} & the index of the column. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+No boundary check is performed. 
+\end{DoxyNote}
+\hypertarget{classscrews_1_1_homogeneous_transform_a68cb5139adf43354a5259385f7807dff}{\index{screws\+::\+Homogeneous\+Transform@{screws\+::\+Homogeneous\+Transform}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!screws\+::\+Homogeneous\+Transform@{screws\+::\+Homogeneous\+Transform}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Num\+Type$>$ {\bf Homogeneous\+Transform}$<$Num\+Type$>$ {\bf screws\+::\+Homogeneous\+Transform}$<$ Num\+Type $>$\+::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Homogeneous\+Transform}$<$ Num\+Type $>$ \&}]{H}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classscrews_1_1_homogeneous_transform_a68cb5139adf43354a5259385f7807dff}
+
+
+Matrix multiplication. 
+
+\begin{DoxyReturn}{Returns}
+the resulting homogeneous transform. 
+\end{DoxyReturn}
+\hypertarget{classscrews_1_1_homogeneous_transform_ac8c3eba60254fe6c3783af4291de779b}{\index{screws\+::\+Homogeneous\+Transform@{screws\+::\+Homogeneous\+Transform}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!screws\+::\+Homogeneous\+Transform@{screws\+::\+Homogeneous\+Transform}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Num\+Type$>$ {\bf Translation}$<$Num\+Type$>$ {\bf screws\+::\+Homogeneous\+Transform}$<$ Num\+Type $>$\+::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Translation}$<$ Num\+Type $>$ \&}]{T}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classscrews_1_1_homogeneous_transform_ac8c3eba60254fe6c3783af4291de779b}
+
+
+Multiplication with a translation. 
+
+\begin{DoxyReturn}{Returns}
+the resulting translation. 
+\end{DoxyReturn}
+\hypertarget{classscrews_1_1_homogeneous_transform_a37c5add16b4ed6a22cc730889a540026}{\index{screws\+::\+Homogeneous\+Transform@{screws\+::\+Homogeneous\+Transform}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!screws\+::\+Homogeneous\+Transform@{screws\+::\+Homogeneous\+Transform}}
+\subsubsection[{operator$\ast$=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Num\+Type$>$ const {\bf Homogeneous\+Transform}$<$Num\+Type$>$\& {\bf screws\+::\+Homogeneous\+Transform}$<$ Num\+Type $>$\+::operator$\ast$= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Homogeneous\+Transform}$<$ Num\+Type $>$ \&}]{H}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classscrews_1_1_homogeneous_transform_a37c5add16b4ed6a22cc730889a540026}
+
+
+In-\/place matrix multiplication. 
+
+\begin{DoxyReturn}{Returns}
+the resulting homogeneous transform. 
+\end{DoxyReturn}
+\hypertarget{classscrews_1_1_homogeneous_transform_ab39f7433963975cd067a665a2d4a87cc}{\index{screws\+::\+Homogeneous\+Transform@{screws\+::\+Homogeneous\+Transform}!operator==@{operator==}}
+\index{operator==@{operator==}!screws\+::\+Homogeneous\+Transform@{screws\+::\+Homogeneous\+Transform}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Num\+Type$>$ bool {\bf screws\+::\+Homogeneous\+Transform}$<$ Num\+Type $>$\+::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf Homogeneous\+Transform}$<$ Num\+Type $>$ \&}]{H}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classscrews_1_1_homogeneous_transform_ab39f7433963975cd067a665a2d4a87cc}
+
+
+Element-\/by-\/element exact equality operator. 
+
+\begin{DoxyReturn}{Returns}
+true if all elements are exactly the same. 
+\end{DoxyReturn}
+\hypertarget{classscrews_1_1_homogeneous_transform_a6ff95f963c60c77571321e03d845b588}{\index{screws\+::\+Homogeneous\+Transform@{screws\+::\+Homogeneous\+Transform}!rotation@{rotation}}
+\index{rotation@{rotation}!screws\+::\+Homogeneous\+Transform@{screws\+::\+Homogeneous\+Transform}}
+\subsubsection[{rotation}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Num\+Type$>$ {\bf Rotation}$<$Num\+Type$>$ {\bf screws\+::\+Homogeneous\+Transform}$<$ Num\+Type $>$\+::rotation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classscrews_1_1_homogeneous_transform_a6ff95f963c60c77571321e03d845b588}
+
+
+Return the rotational part of the homogeneous transformation matrix. 
+
+\begin{DoxyReturn}{Returns}
+the 3x3 rotational component. 
+\end{DoxyReturn}
+\hypertarget{classscrews_1_1_homogeneous_transform_aff5a72c974f2e318172f040e47efb2dc}{\index{screws\+::\+Homogeneous\+Transform@{screws\+::\+Homogeneous\+Transform}!set\+Rotation@{set\+Rotation}}
+\index{set\+Rotation@{set\+Rotation}!screws\+::\+Homogeneous\+Transform@{screws\+::\+Homogeneous\+Transform}}
+\subsubsection[{set\+Rotation}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Num\+Type$>$ void {\bf screws\+::\+Homogeneous\+Transform}$<$ Num\+Type $>$\+::set\+Rotation (
+\begin{DoxyParamCaption}
+\item[{const {\bf Rotation}$<$ Num\+Type $>$ \&}]{R}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classscrews_1_1_homogeneous_transform_aff5a72c974f2e318172f040e47efb2dc}
+
+
+Set the rotational part of the homegeneous transformation matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em R} & the new rotational component. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classscrews_1_1_homogeneous_transform_a777414acc4a12cb8201f1b2f079d1178}{\index{screws\+::\+Homogeneous\+Transform@{screws\+::\+Homogeneous\+Transform}!set\+Translation@{set\+Translation}}
+\index{set\+Translation@{set\+Translation}!screws\+::\+Homogeneous\+Transform@{screws\+::\+Homogeneous\+Transform}}
+\subsubsection[{set\+Translation}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Num\+Type$>$ void {\bf screws\+::\+Homogeneous\+Transform}$<$ Num\+Type $>$\+::set\+Translation (
+\begin{DoxyParamCaption}
+\item[{const {\bf Translation}$<$ Num\+Type $>$ \&}]{T}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classscrews_1_1_homogeneous_transform_a777414acc4a12cb8201f1b2f079d1178}
+
+
+Change the translation part of the homogeneous transformation matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em T} & the new translation component. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classscrews_1_1_homogeneous_transform_aacc88fcb1e2f0467481706cef3325172}{\index{screws\+::\+Homogeneous\+Transform@{screws\+::\+Homogeneous\+Transform}!translation@{translation}}
+\index{translation@{translation}!screws\+::\+Homogeneous\+Transform@{screws\+::\+Homogeneous\+Transform}}
+\subsubsection[{translation}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Num\+Type$>$ {\bf Translation}$<$Num\+Type$>$ {\bf screws\+::\+Homogeneous\+Transform}$<$ Num\+Type $>$\+::translation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classscrews_1_1_homogeneous_transform_aacc88fcb1e2f0467481706cef3325172}
+
+
+Return the 3x1 translation vector. 
+
+\begin{DoxyReturn}{Returns}
+the 3x1 translation vector. 
+\end{DoxyReturn}
+\hypertarget{classscrews_1_1_homogeneous_transform_a8dd7f05a1bf120cc927408e67deff45d}{\index{screws\+::\+Homogeneous\+Transform@{screws\+::\+Homogeneous\+Transform}!twist@{twist}}
+\index{twist@{twist}!screws\+::\+Homogeneous\+Transform@{screws\+::\+Homogeneous\+Transform}}
+\subsubsection[{twist}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Num\+Type$>$ {\bf Twist}$<$Num\+Type$>$ {\bf screws\+::\+Homogeneous\+Transform}$<$ Num\+Type $>$\+::twist (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classscrews_1_1_homogeneous_transform_a8dd7f05a1bf120cc927408e67deff45d}
+
+
+Calculate the twist (log) of the homogeneous transformation matrix. 
+
+\begin{DoxyReturn}{Returns}
+the 4x4 twist skew symmetric matrix. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/cbergeles/\+Dropbox/prj/mevislab/\+Custom\+Libraries/\+General/\+Sources/\+Shared/\+Screws/homogeneous\+Transform.\+hpp\end{DoxyCompactItemize}
