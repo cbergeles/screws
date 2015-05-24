@@ -7,18 +7,18 @@
 # \date    2014-10-21
 # -----------------------------------------------------------------------------
 
-TEMPLATE   = lib
+TEMPLATE   = app
 
-TARGET     = Screws
+TARGET     = TestScrews
 
-DESTDIR    = ../../../lib
-DLLDESTDIR = ../../../lib
+DESTDIR    = ../../../bin
+DLLDESTDIR = ../../../bin
 
 # Set high warn level (warn 4 on MSVC)
 WARN = HIGH
 
 # Add used projects here (see included pri files below for available projects)
-CONFIG += dll ML MLBase Eigen324
+CONFIG += dll ML MLBase Screws
 
 include(../../../Configuration/CustomLibraries_General.pri)
 
@@ -28,22 +28,11 @@ MLAB_PACKAGES += \
 # make sure that this file is included after CONFIG and MLAB_PACKAGES
 include ($(MLAB_MeVis_Foundation)/Configuration/IncludePackages.pri)
 
-DEFINES += SCREWS_EXPORTS
-
 # Enable ML deprecated API warnings. To completely disable the deprecated API, change WARN to DISABLE.
 DEFINES += ML_DISABLE_DEPRECATED
 
 HEADERS += \
-  src/screws.hpp \
-  src/translation.hpp \
-  src/rotation.hpp \
-  src/homogeneousTransform.hpp \
-  src/skew.hpp \
-  src/twist.hpp \
-  src/adjoint.hpp \
-  src/screwException.hpp \
-  src/screwsInitLibrary.hpp \
-  src/vector6.hpp
+  src/screws.hpp
 
 SOURCES += \
-  src/screwException.cpp
+  src/testScrews.cpp

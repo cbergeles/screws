@@ -19,6 +19,7 @@
 
 #include "screwsInitLibrary.hpp"
 #include "screwException.hpp"
+#include "vector6.hpp"
 #include <Eigen/Eigen>
 #include <cfloat>
 
@@ -32,15 +33,7 @@ namespace screws
   class HomogeneousTransform;
   template<class NumType>
   class Skew;
-  template<class NumType>
-  class Vector6;
-
-  template<typename NumType>
-  using TwistCoordinates = Vector6 < NumType >;
-
-  using TwistCoordinatesd = Vector6d;
-  using TwistCoordinatesf = Vector6f;
-
+  
   /*!
    * \class Twist
    * \ingroup libScrews
@@ -157,7 +150,7 @@ namespace screws
 
     /// @brief Calculate and return the axis of the twist.
     /// @return a TwistCoordinates vector w containing the axis of the twist, with  w(0:2) + \lambda*w(3:5), \lambda\in\mathcal{R}.
-    TwistCoordinates<NumType> axis() const
+    TwistCoordinates < NumType > axis() const
     {
       TwistCoordinates<NumType> ax;
       Translation<NumType> omega = _skew.coordinates();

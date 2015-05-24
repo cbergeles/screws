@@ -176,12 +176,12 @@ namespace screws
       NumType alpha, beta, gamma;
 
       beta = atan2(-_data(2, 0), sqrt(_data(0, 0)*_data(0, 0) + _data(1, 0)*_data(1, 0)));
-      if (fabs(beta - M_PI_2) < FLT_EPSILON)
+      if (fabs(beta - M_PI/2) < FLT_EPSILON)
       {
         alpha = 0;
         gamma = atan2(_data(0, 1), _data(1, 1));
       }
-      else if (fabs(beta + M_PI_2) < FLT_EPSILON)
+      else if (fabs(beta + M_PI/2) < FLT_EPSILON)
       {
         alpha = 0;
         gamma = -atan2(_data(0, 1), _data(1, 1));
