@@ -16,6 +16,7 @@
 
 #include "screwException.hpp"
 #include <stdlib.h>
+#include <stdio.h>
 
 using namespace screws;
 

@@ -1,4 +1,4 @@
-//  Copyright (c) 2013  Christos Bergeles and Imperial College London
+//  Copyright (c) 2015  Christos Bergeles and Imperial College London
 
 //  This program is free software: you can redistribute it and/or modify
 //  it under the terms of the GNU General Public License as published by
